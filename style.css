@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url(//turbo.azstatic.com/assets/SourceSansPro-Semibold.otf-07a3dd0e32f9f0546ba8236119e2ec22e1187c9698573d9efd0001bf4828746d.woff2) format("woff2");
+    font-weight: 600;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url(//turbo.azstatic.com/assets/HelveticaNeue-d80f6be43556109eb3b61f0c3c603f7210ce01007f2497f64260bdaa132b5072.woff2) format("woff2");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url(//turbo.azstatic.com/assets/HelveticaNeue-Medium-fe14366364ea0525b86b7ee7f1db85e3d1a996a69e433249bb3929b42b8bb39a.woff2) format("woff2");
+    font-weight: 500;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url(//turbo.azstatic.com/assets/HelveticaNeue-Bold-6321d2f276b34fd6734ce43254097276ae699fd46bd2cd52a0405b22e09a1f58.woff2) format("woff2");
+    font-weight: 700;
+    font-style: normal
+}

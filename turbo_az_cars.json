@@ -1,0 +1,874 @@
+[
+    {
+        "link": "https://turbo.az/autos/10639576-changan-uni-z",
+        "image_url": "https://turbo.azstatic.com/uploads/f460x343/2026%2F08%2F20%2F20%2F02%2F57%2Fa3d995f3-9899-4c61-8177-d9a7d2e4673b%2F81332_aDvtoJmZDae8pZSZh56bTA.jpg",
+        "price": "34 300 ₼",
+        "name": "Changan Uni-Z",
+        "properties": {
+            "year": "2025",
+            "engine": "1.5 L",
+            "km": "26 000 km"
+        },
+        "featured": true,
+        "vipped": true,
+        "datetime": "Bakı, bugün 00:19"
+    },
+    {
+        "link": "https://turbo.az/autos/10640062-changan-oshan-x5-plus",
+        "image_url": "https://turbo.azstatic.com/uploads/f460x343/2026%2F08%2F21%2F00%2F16%2F19%2F30fd6a8d-f2e8-4e96-80a3-1151af4faa7d%2F81327_yTuD87VeZAjgpFiGpDufjQ.jpg",
+        "price": "24 999 ₼",
+        "name": "Changan Oshan X5 Plus",
+        "properties": {
+            "year": "2026",
+            "engine": "1.5 L",
+            "km": "0 km"
+        },
+        "datetime": "Bakı, bugün 00:18"
+    },
+    {
+        "link": "https://turbo.az/autos/10638113-mercedes-c-280",
+        "image_url": "https://turbo.azstatic.com/uploads/f460x343/2026%2F08%2F20%2F10%2F58%2F22%2F161a046a-f2f4-49ef-994e-5c0a79b67645%2F81313_H5OzF8PemkrxicPtJ7L8qA.jpg",
+        "price": "5 600 ₼",
+        "name": "Mercedes C 280",
+        "properties": {
+            "year": "1994",
+            "engine": "2.8 L",
+            "km": "95 000 km"
+        },
+        "datetime": "Şəki, bugün 00:17"
+    },
+    {
+        "link": "https://turbo.az/autos/10520006-bmw-x5",
+        "image_url": "https://turbo.azstatic.com/uploads/f460x343/2026%2F07%2F04%2F19%2F38%2F51%2Fe7f828c4-b3f2-4e77-908d-4345f3046ab8%2F75430_pbc8U2hqP3Kor-enCeVn5Q.jpg",
+        "price": "38 000 ₼",
+        "name": "BMW X5",
+        "properties": {
+            "year": "2016",
+            "engine": "2.0 L",
+            "km": "155 000 km"
+        },
+        "datetime": "Bakı, bugün 00:16"
+    },
+    {
+        "link": "https://turbo.az/autos/10636101-hyundai-santa-fe",
+        "image_url": "https://turbo.azstatic.com/uploads/f460x343/2026%2F08%2F19%2F12%2F43%2F53%2F9280f169-b535-4694-aa6a-b3d2585ff020%2F36779_qCz0P08azM2qARLTPgvwNw.jpg",
+        "price": "29 900 ₼",
+        "name": "Hyundai Santa Fe",
+        "properties": {
+            "year": "2017",
+            "engine": "2.0 L",
+            "km": "114 000 km"
+        },
+        "datetime": "Bakı, bugün 00:16"
+    },
+    {
+        "link": "https://turbo.az/autos/10630162-bmw-528",
+        "image_url": "https://turbo.azstatic.com/uploads/f460x343/2026%2F08%2F17%2F00%2F41%2F17%2F00331e5b-01b3-49bb-a936-c8a0d7ff52ba%2F36856_9h90POM-fVCEB3a2yWs52A.jpg",
+        "price": "26 700 ₼",
+        "name": "BMW 528",
+        "properties": {
+            "year": "2015",
+            "engine": "2.0 L",
+            "km": "199 000 km"
+        },
+        "datetime": "Bakı, bugün 00:09"
+    },
+    {
+        "link": "https://turbo.az/autos/10638289-mercedes-e-300",
+        "image_url": "https://turbo.azstatic.com/uploads/f460x343/2026%2F08%2F20%2F12%2F04%2F28%2F1086e9ba-5643-4753-bfec-6b5575caf1d6%2F81311_jjMTyfzKpna2W8XXWf3gWg.jpg",
+        "price": "47 500 ₼",
+        "name": "Mercedes E 300",
+        "properties": {
+            "year": "2018",
+            "engine": "2.0 L",
+            "km": "166 000 km"
+        },
+        "datetime": "Bakı, bugün 00:08"
+    },
+    {
+        "link": "https://turbo.az/autos/10564553-toyota-land-cruiser-prado",
+        "image_url": "https://turbo.azstatic.com/uploads/f460x343/2026%2F07%2F21%2F21%2F28%2F42%2F099f5b7a-5c91-4a8b-8d94-7fee330d420e%2F20625_aenYusIcl4_yekXHdak0Fg.jpg",
+        "price": "36 500 ₼",
+        "name": "Toyota Land Cruiser Prado",
+        "properties": {
+            "year": "2012",
+            "engine": "2.7 L",
+            "km": "201 000 km"
+        },
+        "datetime": "Ağdaş, bugün 00:08"
+    },
+    {
+        "link": "https://turbo.az/autos/10588036-ford-mustang",
+        "image_url": "https://turbo.azstatic.com/uploads/f460x343/2026%2F07%2F31%2F14%2F52%2F34%2F7efe7d39-2c3c-40eb-8c85-b4ed2a291ec0%2F42927_uEPGJgaaQBveA2Iio3VNMQ.jpg",
+        "price": "32 700 ₼",
+        "name": "Ford Mustang",
+        "properties": {
+            "year": "2017",
+            "engine": "2.3 L",
+            "km": "99 000 km"
+        },
+        "datetime": "Bakı, bugün 00:06"
+    },
+    {
+        "link": "https://turbo.az/autos/10666557-lexus-nx-300",
+        "image_url": "https://turbo.azstatic.com/uploads/f460x343/2026%2F08%2F31%2F23%2F56%2F06%2F331c1c1b-14e5-4e9d-a940-915a08c49af0%2F72348_CTyWwGNXbt3bWEQ4v1inZg.jpg",
+        "price": "48 000 ₼",
+        "name": "Lexus NX 300",
+        "properties": {
+            "year": "2018",
+            "engine": "2.0 L",
+            "km": "49 900 km"
+        },
+        "datetime": "Bakı, bugün 00:21"
+    },
+    {
+        "link": "https://turbo.az/autos/10658384-hyundai-grandeur",
+        "image_url": "https://turbo.azstatic.com/uploads/f460x343/2026%2F08%2F28%2F18%2F07%2F20%2F1f0d356c-66da-412b-8990-36f59379c09c%2F68086_h3zPyG_CafNqe9RWkzMu6w.jpg",
+        "price": "24 700 ₼",
+        "name": "Hyundai Grandeur",
+        "properties": {
+            "year": "2014",
+            "engine": "2.2 L",
+            "km": "284 000 km"
+        },
+        "datetime": "Bakı, bugün 00:05"
+    },
+    {
+        "link": "https://turbo.az/autos/10654396-bmw-530",
+        "image_url": "https://turbo.azstatic.com/uploads/f460x343/2026%2F08%2F26%2F20%2F27%2F59%2F9c202518-65c9-4f5c-bb36-40e68df52daa%2F87167_Kzj8WRHVan6msiIuT8LRLw.jpg",
+        "price": "33 900 ₼",
+        "name": "BMW 530",
+        "properties": {
+            "year": "2017",
+            "engine": "2.0 L",
+            "km": "171 000 km"
+        },
+        "datetime": "Bakı, bugün 00:05"
+    },
+    {
+        "link": "https://turbo.az/autos/10644252-jeep-wrangler",
+        "image_url": "https://turbo.azstatic.com/uploads/f460x343/2026%2F08%2F22%2F22%2F11%2F46%2Ffea6c424-27ad-4ca7-96c7-2ab11227fe41%2F68137_3Ab7UmX98MNf2DVqHjuYxg.jpg",
+        "price": "59 999 ₼",
+        "name": "Jeep Wrangler",
+        "properties": {
+            "year": "2021",
+            "engine": "2.0 L",
+            "km": "81 000 km"
+        },
+        "datetime": "Bakı, bugün 00:05"
+    },
+    {
+        "link": "https://turbo.az/autos/10629477-dodge-charger",
+        "image_url": "https://turbo.azstatic.com/uploads/f460x343/2026%2F08%2F16%2F19%2F50%2F31%2F7ab3addd-0f9a-49cf-afb0-f71e4eeaee74%2F36804_3hOe-ZaVwY6UjsTE_3pzgQ.jpg",
+        "price": "35 900 ₼",
+        "name": "Dodge Charger",
+        "properties": {
+            "year": "2016",
+            "engine": "3.6 L",
+            "km": "55 000 km"
+        },
+        "datetime": "Bakı, bugün 00:05"
+    },
+    {
+        "link": "https://turbo.az/autos/10629448-porsche-panamera-4",
+        "image_url": "https://turbo.azstatic.com/uploads/f460x343/2026%2F08%2F16%2F19%2F36%2F44%2F817edb1a-5cc1-4939-96ef-1c9d895598f1%2F94281_JNCkkzYtEMxoSIlZ7jpTvw.jpg",
+        "price": "44 400 ₼",
+        "name": "Porsche Panamera 4",
+        "properties": {
+            "year": "2013",
+            "engine": "3.6 L",
+            "km": "77 000 km"
+        },
+        "datetime": "Bakı, bugün 00:05"
+    },
+    {
+        "link": "https://turbo.az/autos/10612666-bmw-530",
+        "image_url": "https://turbo.azstatic.com/uploads/f460x343/2026%2F08%2F10%2F01%2F27%2F07%2F46b64281-6ced-4dec-bb8a-acbbb638dc59%2F61359_7zbku9too3tz1wdcSE9yEQ.jpg",
+        "price": "36 500 ₼",
+        "name": "BMW 530",
+        "properties": {
+            "year": "2017",
+            "engine": "2.0 L",
+            "km": "177 000 km"
+        },
+        "datetime": "Bakı, bugün 00:05"
+    },
+    {
+        "link": "https://turbo.az/autos/10604021-land-rover-range-rover",
+        "image_url": "https://turbo.azstatic.com/uploads/f460x343/2026%2F08%2F06%2F15%2F10%2F02%2Fd5931e9a-88e1-4d14-b81d-eb791c4bc6bd%2F83417_8oj3DK96miRnwpIg71lixw.jpg",
+        "price": "47 700 ₼",
+        "name": "Land Rover Range Rover",
+        "properties": {
+            "year": "2016",
+            "engine": "3.0 L",
+            "km": "140 000 km"
+        },
+        "datetime": "Bakı, bugün 00:05"
+    },
+    {
+        "link": "https://turbo.az/autos/10596551-bmw-x5",
+        "image_url": "https://turbo.azstatic.com/uploads/f460x343/2026%2F08%2F03%2F17%2F14%2F29%2F5a5087bc-76a5-4f03-9203-7465b0cf4468%2F26596_OVgr29T8Toc0HnnlST0VPw.jpg",
+        "price": "78 700 ₼",
+        "name": "BMW X5",
+        "properties": {
+            "year": "2019",
+            "engine": "3.0 L",
+            "km": "120 000 km"
+        },
+        "datetime": "Bakı, bugün 00:05"
+    },
+    {
+        "link": "https://turbo.az/autos/10574381-mercedes-s-350-d-4matic",
+        "image_url": "https://turbo.azstatic.com/uploads/f460x343/2026%2F07%2F26%2F01%2F05%2F18%2F66bc7758-1b15-4ddc-8d5f-b3d023d31d1c%2F78059_zc0_D9E57WNPuv3tUIvdpw.jpg",
+        "price": "67 000 ₼",
+        "name": "Mercedes S 350 d 4MATIC",
+        "properties": {
+            "year": "2015",
+            "engine": "3.0 L",
+            "km": "202 000 km"
+        },
+        "datetime": "Bakı, bugün 00:05"
+    },
+    {
+        "link": "https://turbo.az/autos/10556594-mercedes-e-350",
+        "image_url": "https://turbo.azstatic.com/uploads/f460x343/2026%2F07%2F19%2F02%2F13%2F47%2Ff4b85806-98b2-4294-8bf2-0c9ca15337c8%2F20625_JB7R5F8s6OgiDhAho8znJQ.jpg",
+        "price": "55 500 ₼",
+        "name": "Mercedes E 350",
+        "properties": {
+            "year": "2019",
+            "engine": "2.0 L",
+            "km": "99 000 km"
+        },
+        "datetime": "Bakı, bugün 00:05"
+    },
+    {
+        "link": "https://turbo.az/autos/10561969-toyota-camry",
+        "image_url": "https://turbo.azstatic.com/uploads/f460x343/2026%2F07%2F20%2F21%2F36%2F04%2F3ce16b3c-8836-403d-8969-3841a54015e9%2F53176_Q8EZY-y4g2Vo6kdDuNiB6Q.jpg",
+        "price": "33 900 ₼",
+        "name": "Toyota Camry",
+        "properties": {
+            "year": "2019",
+            "engine": "2.5 L",
+            "km": "94 000 km"
+        },
+        "datetime": "Bakı, bugün 00:05"
+    },
+    {
+        "link": "https://turbo.az/autos/10528497-bmw-528",
+        "image_url": "https://turbo.azstatic.com/uploads/f460x343/2026%2F07%2F08%2F00%2F07%2F43%2Fe9895226-f37c-4b33-b24e-3b07e6666257%2F10538_-wiF94DwsHAAX65AstDMyA.jpg",
+        "price": "27 800 ₼",
+        "name": "BMW 528",
+        "properties": {
+            "year": "2016",
+            "engine": "2.0 L",
+            "km": "174 000 km"
+        },
+        "datetime": "Bakı, bugün 00:05"
+    },
+    {
+        "link": "https://turbo.az/autos/10266067-kia-sorento",
+        "image_url": "https://turbo.azstatic.com/uploads/f460x343/2026%2F03%2F27%2F17%2F00%2F19%2F53e55743-9eca-4718-bb03-38c1df955c36%2F73428_z96tsPDsUghRYnjBh5Kjww.jpg",
+        "price": "33 800 ₼",
+        "name": "Kia Sorento",
+        "properties": {
+            "year": "2017",
+            "engine": "2.0 L",
+            "km": "215 000 km"
+        },
+        "datetime": "Bərdə, bugün 00:04"
+    },
+    {
+        "link": "https://turbo.az/autos/10619747-changan-cs-55-plus",
+        "image_url": "https://turbo.azstatic.com/uploads/f460x343/2026%2F08%2F12%2F19%2F40%2F55%2F851ef92f-918a-4d01-a041-617af1cb117e%2F14165_w7vmmWXi8GLF84mxsPT0CA.jpg",
+        "price": "25 900 ₼",
+        "name": "Changan CS 55 Plus",
+        "properties": {
+            "year": "2024",
+            "engine": "1.5 L",
+            "km": "51 000 km"
+        },
+        "datetime": "Bakı, bugün 00:04"
+    },
+    {
+        "link": "https://turbo.az/autos/10609970-hyundai-equus",
+        "image_url": "https://turbo.azstatic.com/uploads/f460x343/2026%2F08%2F09%2F00%2F46%2F25%2Fc1b15ff9-8361-41fb-9e5d-96ab33352d7e%2F80288_czT_-yyyER32mhhr7ffrzQ.jpg",
+        "price": "16 900 ₼",
+        "name": "Hyundai Equus",
+        "properties": {
+            "year": "2010",
+            "engine": "4.6 L",
+            "km": "325 000 km"
+        },
+        "datetime": "Bakı, bugün 00:04"
+    },
+    {
+        "link": "https://turbo.az/autos/10544027-hyundai-avante",
+        "image_url": "https://turbo.azstatic.com/uploads/f460x343/2026%2F07%2F14%2F02%2F19%2F27%2F90f964ce-920d-4619-848b-27249e2e4aeb%2F22952_JPiet4qEjLH_PlVe4Qigag.jpg",
+        "price": "23 900 ₼",
+        "name": "Hyundai Avante",
+        "properties": {
+            "year": "2017",
+            "engine": "1.6 L",
+            "km": "185 000 km"
+        },
+        "datetime": "Bakı, bugün 00:04"
+    },
+    {
+        "link": "https://turbo.az/autos/10508283-hyundai-sonata",
+        "image_url": "https://turbo.azstatic.com/uploads/f460x343/2026%2F06%2F29%2F21%2F54%2F00%2F915f32c8-1ce9-4232-97bd-10105545767a%2F11937_VrTynRjzK1q-kgWM6ZDDaA.jpg",
+        "price": "33 800 ₼",
+        "name": "Hyundai Sonata",
+        "properties": {
+            "year": "2021",
+            "engine": "1.6 L",
+            "km": "72 000 km"
+        },
+        "featured": true,
+        "vipped": true,
+        "datetime": "Bakı, bugün 00:04"
+    },
+    {
+        "link": "https://turbo.az/autos/10484486-hyundai-elantra",
+        "image_url": "https://turbo.azstatic.com/uploads/f460x343/2026%2F06%2F20%2F15%2F35%2F49%2F70488eeb-7732-443a-82e3-8c0c566ae88a%2F64473_1sjPdi4_vHnQKCffGK34LQ.jpg",
+        "price": "21 900 ₼",
+        "name": "Hyundai Elantra",
+        "properties": {
+            "year": "2014",
+            "engine": "1.8 L",
+            "km": "192 000 km"
+        },
+        "datetime": "Bakı, bugün 00:04"
+    },
+    {
+        "link": "https://turbo.az/autos/10443232-toyota-corolla-axio",
+        "image_url": "https://turbo.azstatic.com/uploads/f460x343/2026%2F06%2F03%2F16%2F26%2F28%2F013494da-688f-45eb-be71-03f31e2ea0ba%2F26244_poo22Zm6IdjYEJOS89Y-xQ.jpg",
+        "price": "20 500 ₼",
+        "name": "Toyota Corolla Axio",
+        "properties": {
+            "year": "2018",
+            "engine": "1.5 L",
+            "km": "348 000 km"
+        },
+        "datetime": "Bakı, bugün 00:04"
+    },
+    {
+        "link": "https://turbo.az/autos/10199420-toyota-prius",
+        "image_url": "https://turbo.azstatic.com/uploads/f460x343/2026%2F03%2F02%2F12%2F38%2F02%2Fdbad00c9-be6d-4556-aa51-25956f26dafb%2F14627_hiW4RzI9Emg8RrODRIyLYQ.jpg",
+        "price": "33 000 ₼",
+        "name": "Toyota Prius",
+        "properties": {
+            "year": "2022",
+            "engine": "1.8 L",
+            "km": "85 000 km"
+        },
+        "datetime": "Bakı, bugün 00:04"
+    },
+    {
+        "link": "https://turbo.az/autos/9889630-toyota-corolla-fielder",
+        "image_url": "https://turbo.azstatic.com/uploads/f460x343/2025%2F10%2F29%2F15%2F49%2F07%2F7ca3953d-0e11-4c15-81db-b59d449c283f%2F89649_IdiJWhN4F5E3SSESYyyqZg.jpg",
+        "price": "22 600 ₼",
+        "name": "Toyota Corolla Fielder",
+        "properties": {
+            "year": "2019",
+            "engine": "1.5 L",
+            "km": "117 000 km"
+        },
+        "datetime": "Bakı, bugün 00:04"
+    },
+    {
+        "link": "https://turbo.az/autos/10617858-mercedes-e-350-e",
+        "image_url": "https://turbo.azstatic.com/uploads/f460x343/2026%2F08%2F11%2F19%2F49%2F47%2F5bc681e0-5075-4aeb-b398-1c48d78fc79b%2F62684_H73AQBdpxSIicw71tYbpBQ.jpg",
+        "price": "161 500 ₼",
+        "name": "Mercedes E 350 e",
+        "properties": {
+            "year": "2024",
+            "engine": "2.0 L",
+            "km": "12 000 km"
+        },
+        "datetime": "Bakı, bugün 00:04"
+    },
+    {
+        "link": "https://turbo.az/autos/10626840-audi-a6",
+        "image_url": "https://turbo.azstatic.com/uploads/f460x343/2026%2F08%2F15%2F20%2F42%2F46%2F603f56f4-67e9-4fa2-b98e-f58911caa6e2%2F36800_VrCqHxVXRD10hPgqbJBCbw.jpg",
+        "price": "22 500 ₼",
+        "name": "Audi A6",
+        "properties": {
+            "year": "2014",
+            "engine": "3.0 L",
+            "km": "220 000 km"
+        },
+        "datetime": "Sumqayıt, bugün 00:03"
+    },
+    {
+        "link": "https://turbo.az/autos/10632621-bmw-530e",
+        "image_url": "https://turbo.azstatic.com/uploads/f460x343/2026%2F08%2F17%2F23%2F24%2F13%2F61fd2cf8-82b3-4007-b3bc-8b04356c3f6c%2F36785_hXF_d41yMez6cN107VI6tg.jpg",
+        "price": "67 660 ₼",
+        "name": "BMW 530e",
+        "properties": {
+            "year": "2021",
+            "engine": "2.0 L",
+            "km": "116 000 km"
+        },
+        "datetime": "Bakı, bugün 00:02"
+    },
+    {
+        "link": "https://turbo.az/autos/10630331-hyundai-santa-fe",
+        "image_url": "https://turbo.azstatic.com/uploads/f460x343/2026%2F08%2F17%2F09%2F51%2F31%2F11e2f875-cfd4-44e0-bb83-1f3d4247053d%2F36775_O-_FLY1i1y64f8WwGWYeGg.jpg",
+        "price": "18 300 ₼",
+        "name": "Hyundai Santa Fe",
+        "properties": {
+            "year": "2007",
+            "engine": "2.0 L",
+            "km": "127 000 km"
+        },
+        "datetime": "Bakı, bugün 00:01"
+    },
+    {
+        "link": "https://turbo.az/autos/10660224-cadillac-xt4",
+        "image_url": "https://turbo.azstatic.com/uploads/f460x343/2026%2F08%2F29%2F16%2F04%2F08%2Fed207b2f-e5f8-4741-b4a7-9c1399c6c722%2F87138_Ur_nj2ZykUUFrkFdfC5Hmg.jpg",
+        "price": "50 000 ₼",
+        "name": "Cadillac XT4",
+        "properties": {
+            "year": "2019",
+            "engine": "2.0 L",
+            "km": "70 500 km"
+        },
+        "datetime": "Bakı, dünən 23:58"
+    },
+    {
+        "link": "https://turbo.az/autos/10648054-lexus-lx-470",
+        "image_url": "https://turbo.azstatic.com/uploads/f460x343/2026%2F08%2F24%2F11%2F49%2F50%2F3fb512ed-d2b1-4abf-803a-2080d309d32b%2F68144_XuTl2lxvUp5YdyhIS7UwdA.jpg",
+        "price": "45 000 ₼",
+        "name": "Lexus LX 470",
+        "properties": {
+            "year": "2006",
+            "engine": "4.7 L",
+            "km": "88 000 km"
+        },
+        "featured": true,
+        "vipped": true,
+        "datetime": "Bakı, dünən 23:57"
+    },
+    {
+        "link": "https://turbo.az/autos/10511224-mercedes-g-63-amg",
+        "image_url": "https://turbo.azstatic.com/uploads/f460x343/2026%2F07%2F01%2F04%2F25%2F45%2F3b90794a-4340-4273-b3f2-c84dd1f9a7e7%2F40480_15BHyX14lyiqM4hNPD2Hqw.jpg",
+        "price": "104 550 ₼",
+        "name": "Mercedes G 63 AMG",
+        "properties": {
+            "year": "2014",
+            "engine": "5.5 L",
+            "km": "167 000 km"
+        },
+        "datetime": "Bakı, bugün 00:00"
+    },
+    {
+        "link": "https://turbo.az/autos/10009798-mercedes-e-300",
+        "image_url": "https://turbo.azstatic.com/uploads/f460x343/2025%2F12%2F17%2F23%2F29%2F27%2F38db9a83-1359-4270-a630-1c42925286aa%2F22273__Y5VgbD24UG_WNWlOkmxkQ.jpg",
+        "price": "41 000 ₼",
+        "name": "Mercedes E 300",
+        "properties": {
+            "year": "2018",
+            "engine": "2.0 L",
+            "km": "247 000 km"
+        },
+        "datetime": "Bakı, dünən 23:53"
+    },
+    {
+        "link": "https://turbo.az/autos/9917695-li-auto-l9",
+        "image_url": "https://turbo.azstatic.com/uploads/f460x343/2025%2F11%2F10%2F12%2F01%2F01%2Fc6071342-6896-494d-a85b-7564dd81446d%2F21397_6K28HCZJoV8Blf9DZG2TFg.jpg",
+        "price": "112 200 ₼",
+        "name": "Li Auto L9",
+        "properties": {
+            "year": "2025",
+            "engine": "1.5 L",
+            "km": "0 km"
+        },
+        "datetime": "Bakı, dünən 23:51"
+    },
+    {
+        "link": "https://turbo.az/autos/10093973-rox-polar-stone-01",
+        "image_url": "https://turbo.azstatic.com/uploads/f460x343/2026%2F01%2F22%2F19%2F51%2F32%2F18d82459-d73c-4c06-afe6-d1ecef64a1f6%2F14240_V2WwujO-tKUi7yPoDBiOMg.jpg",
+        "price": "93 500 ₼",
+        "name": "ROX (Polar Stone) 01",
+        "properties": {
+            "year": "2025",
+            "engine": "1.5 L",
+            "km": "0 km"
+        },
+        "datetime": "Bakı, dünən 23:51"
+    },
+    {
+        "link": "https://turbo.az/autos/10155732-li-auto-l9",
+        "image_url": "https://turbo.azstatic.com/uploads/f460x343/2026%2F02%2F14%2F19%2F56%2F27%2F5ee3108a-7c02-49f4-8efc-fe485c922a7d%2F81108_b86N4k9wTo0ap0dU5b0kHg.jpg",
+        "price": "107 950 ₼",
+        "name": "Li Auto L9",
+        "properties": {
+            "year": "2025",
+            "engine": "1.5 L",
+            "km": "4 000 km"
+        },
+        "featured": true,
+        "vipped": true,
+        "datetime": "Bakı, dünən 23:50"
+    },
+    {
+        "link": "https://turbo.az/autos/10657318-changan-qiyuan-q07",
+        "image_url": "https://turbo.azstatic.com/uploads/f460x343/2026%2F08%2F28%2F10%2F37%2F58%2Fb667b77b-8b98-4c6e-aa5e-111d74db7046%2F99261_6Df3pNfX7gtZQ10Cc6DM3A.jpg",
+        "price": "45 500 ₼",
+        "name": "Changan Qiyuan Q07",
+        "properties": {
+            "year": "2025",
+            "engine": "1.5 L",
+            "km": "14 000 km"
+        },
+        "datetime": "Bakı, dünən 23:50"
+    },
+    {
+        "link": "https://turbo.az/autos/10278545-mercedes-eqe-500-4matic-suv",
+        "image_url": "https://turbo.azstatic.com/uploads/f460x343/2026%2F07%2F08%2F18%2F13%2F22%2F940170db-cf96-4c58-b4fb-670a524bcabc%2F3039_sXOGszDHmxpLDxLyYuF4tw.jpg",
+        "price": "93 500 ₼",
+        "name": "Mercedes EQE 500 4MATIC SUV",
+        "properties": {
+            "year": "2024",
+            "engine": "90.6 kWh",
+            "km": "0 km"
+        },
+        "datetime": "Bakı, dünən 23:50"
+    },
+    {
+        "link": "https://turbo.az/autos/9920744-audi-q7",
+        "image_url": "https://turbo.azstatic.com/uploads/f460x343/2026%2F02%2F02%2F16%2F31%2F13%2Ff551a0b6-5e66-4446-bd56-cee5323bccfb%2F73228_MYR0B8ekkLHkVd2pHDiBlA.jpg",
+        "price": "93 500 ₼",
+        "name": "Audi Q7",
+        "properties": {
+            "year": "2023",
+            "engine": "3.0 L",
+            "km": "32 000 km"
+        },
+        "datetime": "Bakı, dünən 23:50"
+    },
+    {
+        "link": "https://turbo.az/autos/10658086-nissan-versa",
+        "image_url": "https://turbo.azstatic.com/uploads/f460x343/2026%2F08%2F28%2F16%2F11%2F04%2Fafad10b9-0758-4ce8-a0ee-205c63e9ceb6%2F46283_q-Cp0Vk1htcNKBkgd1GeKQ.jpg",
+        "price": "12 200 ₼",
+        "name": "Nissan Versa",
+        "properties": {
+            "year": "2012",
+            "engine": "1.6 L",
+            "km": "100 000 km"
+        },
+        "datetime": "Bakı, dünən 23:50"
+    },
+    {
+        "link": "https://turbo.az/autos/10631162-jetour-x70c-dm",
+        "image_url": "https://turbo.azstatic.com/uploads/f460x343/2026%2F08%2F17%2F15%2F17%2F12%2F9a170c5b-2bd9-4aaf-aa52-9e4ed286545d%2F12553_ZkkOoc3ugK0OA7_9wrR9tw.jpg",
+        "price": "43 500 ₼",
+        "name": "JETOUR X70C-DM",
+        "properties": {
+            "year": "2025",
+            "engine": "1.5 L",
+            "km": "0 km"
+        },
+        "datetime": "Bakı, dünən 23:49"
+    },
+    {
+        "link": "https://turbo.az/autos/10587991-mercedes-e-300-e",
+        "image_url": "https://turbo.azstatic.com/uploads/f460x343/2026%2F07%2F31%2F14%2F49%2F19%2F0fedc2ce-6243-45e4-8b37-0adde53310f7%2F64490_OIjokGyum6ROhK9azwN57w.jpg",
+        "price": "134 300 ₼",
+        "name": "Mercedes E 300 e",
+        "properties": {
+            "year": "2024",
+            "engine": "2.0 L",
+            "km": "28 100 km"
+        },
+        "datetime": "Bakı, dünən 23:49"
+    },
+    {
+        "link": "https://turbo.az/autos/10588010-mercedes-gls-450-4matic",
+        "image_url": "https://turbo.azstatic.com/uploads/f460x343/2026%2F07%2F31%2F14%2F55%2F29%2F840d3b20-4c91-475e-83cf-b4063b6dbccc%2F64506_-0dfwnGC9Vc2MvqFoPWkUw.jpg",
+        "price": "153 000 ₼",
+        "name": "Mercedes GLS 450 4MATIC",
+        "properties": {
+            "year": "2022",
+            "engine": "3.0 L",
+            "km": "47 200 km"
+        },
+        "datetime": "Bakı, dünən 23:49"
+    },
+    {
+        "link": "https://turbo.az/autos/10655415-hyundai-accent",
+        "image_url": "https://turbo.azstatic.com/uploads/f460x343/2026%2F08%2F27%2F12%2F48%2F42%2F74da6f4f-df59-49d5-af78-eab08920eb61%2F87170_tzXw5s3BsaXC1_3-OZNBKg.jpg",
+        "price": "14 800 ₼",
+        "name": "Hyundai Accent",
+        "properties": {
+            "year": "2014",
+            "engine": "1.6 L",
+            "km": "138 174 km"
+        },
+        "datetime": "Bakı, dünən 23:48"
+    },
+    {
+        "link": "https://turbo.az/autos/10665393-jeep-wrangler",
+        "image_url": "https://turbo.azstatic.com/uploads/f460x343/2026%2F08%2F31%2F15%2F43%2F04%2F3c2c7975-6bf8-4db0-96e2-4c42882ad450%2F68350_k04_msV5llkxGx8Plzd0tg.jpg",
+        "price": "28 000 ₼",
+        "name": "Jeep Wrangler",
+        "properties": {
+            "year": "2012",
+            "engine": "3.6 L",
+            "km": "302 187 km"
+        },
+        "datetime": "Bakı, dünən 23:48"
+    },
+    {
+        "link": "https://turbo.az/autos/10635082-bmw-x5",
+        "image_url": "https://turbo.azstatic.com/uploads/f460x343/2026%2F08%2F18%2F23%2F05%2F45%2Fb2ba0cd2-d686-464c-b26e-8ff5b5da4998%2F16521_yy3n0KDRHeMjKGXrgjlNlQ.jpg",
+        "price": "44 000 ₼",
+        "name": "BMW X5",
+        "properties": {
+            "year": "2014",
+            "engine": "4.4 L",
+            "km": "169 000 km"
+        },
+        "datetime": "Bakı, dünən 23:44"
+    },
+    {
+        "link": "https://turbo.az/autos/10544985-tesla-model-s",
+        "image_url": "https://turbo.azstatic.com/uploads/f460x343/2026%2F07%2F14%2F15%2F00%2F38%2F7b2cda03-a274-4981-86d2-d97817ab16d0%2F75249_3iMBacI8n1JYKWGFsMR22Q.jpg",
+        "price": "30 500 ₼",
+        "name": "Tesla Model S",
+        "properties": {
+            "year": "2017",
+            "engine": "60 kWh",
+            "km": "192 000 km"
+        },
+        "datetime": "Bakı, dünən 23:42"
+    },
+    {
+        "link": "https://turbo.az/autos/10665377-mercedes-190",
+        "image_url": "https://turbo.azstatic.com/uploads/f460x343/2026%2F08%2F31%2F15%2F25%2F55%2Fe14c71a7-b54e-453c-b10b-fcce7aa99b8e%2F21407_-CH1Y6ccTCQZ7BrElUrgiQ.jpg",
+        "price": "4 700 ₼",
+        "name": "Mercedes 190",
+        "properties": {
+            "year": "1991",
+            "engine": "2.0 L",
+            "km": "243 500 km"
+        },
+        "datetime": "Bakı, dünən 23:42"
+    },
+    {
+        "link": "https://turbo.az/autos/10524181-haval-h6",
+        "image_url": "https://turbo.azstatic.com/uploads/f460x343/2026%2F07%2F06%2F12%2F37%2F54%2Ff69d864e-1728-4252-aed5-ad2b0caf66fa%2F89579_0LjrA2E2AWx-qHmfYT5MmA.jpg",
+        "price": "33 000 ₼",
+        "name": "Haval H6",
+        "properties": {
+            "year": "2025",
+            "engine": "1.5 L",
+            "km": "8 000 km"
+        },
+        "datetime": "Bakı, dünən 23:41"
+    },
+    {
+        "link": "https://turbo.az/autos/10551420-mercedes-c-240",
+        "image_url": "https://turbo.azstatic.com/uploads/f460x343/2026%2F07%2F16%2F23%2F35%2F33%2Faef9961a-d164-4164-b1b2-671ee31e0fe0%2F30726_YS6uCooSDU5BUFSnLJ05Rw.jpg",
+        "price": "13 300 ₼",
+        "name": "Mercedes C 240",
+        "properties": {
+            "year": "1998",
+            "engine": "2.4 L",
+            "km": "507 000 km"
+        },
+        "datetime": "Lənkəran, dünən 23:39"
+    },
+    {
+        "link": "https://turbo.az/autos/10592054-hyundai-santa-fe",
+        "image_url": "https://turbo.azstatic.com/uploads/f460x343/2026%2F08%2F02%2F00%2F37%2F04%2Fd7caed59-0dad-4099-9869-2f564f3c0cbe%2F26137_rvJve3qH6P7hCA1v1b4EkA.jpg",
+        "price": "26 500 ₼",
+        "name": "Hyundai Santa Fe",
+        "properties": {
+            "year": "2014",
+            "engine": "2.4 L",
+            "km": "292 000 km"
+        },
+        "datetime": "Bakı, dünən 23:37"
+    },
+    {
+        "link": "https://turbo.az/autos/10629007-land-rover-rr-velar",
+        "image_url": "https://turbo.azstatic.com/uploads/f460x343/2026%2F08%2F16%2F17%2F43%2F22%2Fbdfd2356-b9dc-448d-af57-7f5aae3c4904%2F94468__xhEtZEBb4MzVXLnRXp16g.jpg",
+        "price": "45 900 ₼",
+        "name": "Land Rover RR Velar",
+        "properties": {
+            "year": "2018",
+            "engine": "2.0 L",
+            "km": "93 000 km"
+        },
+        "datetime": "Bakı, dünən 23:32"
+    },
+    {
+        "link": "https://turbo.az/autos/10471142-land-rover-defender",
+        "image_url": "https://turbo.azstatic.com/uploads/f460x343/2026%2F06%2F15%2F03%2F27%2F49%2F4a9747f6-c06e-4584-97f9-88de57860d6a%2F82275_ZBcu8C3oBK7HVP9IiNo-aA.jpg",
+        "price": "187 000 ₼",
+        "name": "Land Rover Defender",
+        "properties": {
+            "year": "2022",
+            "engine": "3.0 L",
+            "km": "47 000 km"
+        },
+        "datetime": "Bakı, dünən 23:27"
+    },
+    {
+        "link": "https://turbo.az/autos/10098101-mercedes-c-220",
+        "image_url": "https://turbo.azstatic.com/uploads/f460x343/2026%2F03%2F30%2F12%2F56%2F05%2Ff0e0bfb5-4500-4507-8df4-67b19794d1c3%2F77802_I8KKgbKi9KEj7zpuRkG0lQ.jpg",
+        "price": "12 300 ₼",
+        "name": "Mercedes C 220",
+        "properties": {
+            "year": "2000",
+            "engine": "2.2 L",
+            "km": "494 000 km"
+        },
+        "datetime": "Sabirabad, bugün 00:22"
+    },
+    {
+        "link": "https://turbo.az/autos/10467295-im-ls9-erev",
+        "image_url": "https://turbo.azstatic.com/uploads/f460x343/2026%2F06%2F15%2F16%2F27%2F39%2Fd89a67a6-26ae-4e47-a366-03409b2f90fa%2F3039_KBHoVblr57FYg59dhdj6uQ.jpg",
+        "price": "118 660 ₼",
+        "name": "IM LS9 EREV",
+        "properties": {
+            "year": "2026",
+            "engine": "1.5 L",
+            "km": "0 km"
+        },
+        "datetime": "Bakı, dünən 23:25"
+    },
+    {
+        "link": "https://turbo.az/autos/10467073-im-ls9-erev",
+        "image_url": "https://turbo.azstatic.com/uploads/f460x343/2026%2F06%2F15%2F16%2F16%2F22%2F72e64774-8aca-4d3d-bcb2-606aa12f98a3%2F38541_kO-on-HzRfM3oYgr0jNHug.jpg",
+        "price": "111 860 ₼",
+        "name": "IM LS9 EREV",
+        "properties": {
+            "year": "2026",
+            "engine": "1.5 L",
+            "km": "0 km"
+        },
+        "datetime": "Bakı, dünən 23:25"
+    },
+    {
+        "link": "https://turbo.az/autos/10466359-im-ls9-erev",
+        "image_url": "https://turbo.azstatic.com/uploads/f460x343/2026%2F06%2F15%2F16%2F08%2F09%2F8cc72350-8025-4980-b54d-9eb1a40006e3%2F18998_IJYiI5AkyIFhOcjLyYfnZw.jpg",
+        "price": "118 660 ₼",
+        "name": "IM LS9 EREV",
+        "properties": {
+            "year": "2026",
+            "engine": "1.5 L",
+            "km": "0 km"
+        },
+        "datetime": "Bakı, dünən 23:25"
+    },
+    {
+        "link": "https://turbo.az/autos/10621597-chevrolet-equinox",
+        "image_url": "https://turbo.azstatic.com/uploads/f460x343/2026%2F08%2F13%2F16%2F42%2F51%2Faa7dc3be-7913-40f2-8b22-2c796f8b60df%2F79049_kip-dbKdl-GwSd8P3P53cA.jpg",
+        "price": "27 000 ₼",
+        "name": "Chevrolet Equinox",
+        "properties": {
+            "year": "2021",
+            "engine": "1.5 L",
+            "km": "72 000 km"
+        },
+        "datetime": "Bakı, dünən 23:21"
+    },
+    {
+        "link": "https://turbo.az/autos/10448953-mini-cabrio",
+        "image_url": "https://turbo.azstatic.com/uploads/f460x343/2026%2F06%2F05%2F21%2F27%2F53%2F68c1df62-0fbf-47ab-8623-d2ba2c2a9d2c%2F93547_UVmyq7BPZ9ukgHujQiNvsQ.jpg",
+        "price": "29 000 ₼",
+        "name": "Mini Cabrio",
+        "properties": {
+            "year": "2017",
+            "engine": "2.0 L",
+            "km": "81 000 km"
+        },
+        "datetime": "Bakı, dünən 23:20"
+    },
+    {
+        "link": "https://turbo.az/autos/10566360-hyundai-sonata",
+        "image_url": "https://turbo.azstatic.com/uploads/f460x343/2026%2F07%2F22%2F17%2F24%2F20%2F8eab2bd5-30e6-4a0d-b6da-63e18aa32f0f%2F85330_5Uj8my8wlP1fFwa9S5R0SQ.jpg",
+        "price": "35 555 ₼",
+        "name": "Hyundai Sonata",
+        "properties": {
+            "year": "2020",
+            "engine": "1.6 L",
+            "km": "97 000 km"
+        },
+        "datetime": "Bakı, dünən 23:19"
+    },
+    {
+        "link": "https://turbo.az/autos/10661398-bmw-740",
+        "image_url": "https://turbo.azstatic.com/uploads/f460x343/2026%2F08%2F29%2F23%2F03%2F11%2F4b55dd92-1af5-43b3-815a-fb9a0e1f8726%2F68124_UJjMY_j-csIojIwt4K7jPw.jpg",
+        "price": "36 000 ₼",
+        "name": "BMW 740",
+        "properties": {
+            "year": "2012",
+            "engine": "3.0 L",
+            "km": "110 000 km"
+        },
+        "datetime": "Bakı, dünən 23:17"
+    },
+    {
+        "link": "https://turbo.az/autos/10223028-mercedes-amg-gt-43-4matic",
+        "image_url": "https://turbo.azstatic.com/uploads/f460x343/2026%2F03%2F10%2F19%2F42%2F49%2F16086c93-f7b5-4edd-9793-8153e6bcd95d%2F24403_gxu9sz612XJBSLFoi9L30Q.jpg",
+        "price": "161 777 ₼",
+        "name": "Mercedes AMG GT 43 4MATIC+",
+        "properties": {
+            "year": "2022",
+            "engine": "3.0 L",
+            "km": "29 800 km"
+        },
+        "datetime": "Bakı, dünən 23:17"
+    },
+    {
+        "link": "https://turbo.az/autos/10651919-opel-astra",
+        "image_url": "https://turbo.azstatic.com/uploads/f460x343/2026%2F08%2F25%2F19%2F29%2F47%2F7e3d15fa-5349-4fc3-b3f8-3d00796379b0%2F68098_aP0OAsliBJqwDJ3E9GWVWQ.jpg",
+        "price": "8 900 ₼",
+        "name": "Opel Astra",
+        "properties": {
+            "year": "2007",
+            "engine": "1.3 L",
+            "km": "320 000 km"
+        },
+        "datetime": "Sumqayıt, dünən 23:13"
+    },
+    {
+        "link": "https://turbo.az/autos/10634406-mitsubishi-outlander",
+        "image_url": "https://turbo.azstatic.com/uploads/f460x343/2026%2F08%2F22%2F18%2F20%2F10%2F597f269c-8f9e-4a86-9703-18458d4261c7%2F68122_zYu5qxqMea47zgjz1rtVhw.jpg",
+        "price": "8 800 ₼",
+        "name": "Mitsubishi Outlander",
+        "properties": {
+            "year": "2004",
+            "engine": "2.4 L",
+            "km": "373 000 km"
+        },
+        "datetime": "Sumqayıt, dünən 23:13"
+    },
+    {
+        "link": "https://turbo.az/autos/10656345-hyundai-sonata",
+        "image_url": "https://turbo.azstatic.com/uploads/f460x343/2026%2F08%2F27%2F18%2F34%2F51%2F2ceb2d32-d8cb-4730-ada8-c9d5d4837722%2F68107_-LIPVR2nwQ1KeEih-XqZrA.jpg",
+        "price": "31 800 ₼",
+        "name": "Hyundai Sonata",
+        "properties": {
+            "year": "2020",
+            "engine": "1.6 L",
+            "km": "178 000 km"
+        },
+        "datetime": "Gəncə, dünən 23:13"
+    },
+    {
+        "link": "https://turbo.az/autos/10614068-hyundai-santa-fe",
+        "image_url": "https://turbo.azstatic.com/uploads/f460x343/2026%2F08%2F10%2F17%2F03%2F15%2F14fcdb11-0c78-48ea-a63c-328056651296%2F29204_D8_YSzt1334Hbt99XrnA-Q.jpg",
+        "price": "46 900 ₼",
+        "name": "Hyundai Santa Fe",
+        "properties": {
+            "year": "2021",
+            "engine": "1.6 L",
+            "km": "83 200 km"
+        },
+        "datetime": "Bakı, dünən 23:11"
+    }
+]

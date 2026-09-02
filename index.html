@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turbo.az</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; background-color: #f6f7fa; }
+        .feature-checkbox:checked + label {
+            background-color: #ca1016;
+            border-color: #ca1016;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-[#f6f7fa] border-b border-gray-200">
+        <div class="max-w-[1000px] mx-auto flex justify-between items-center text-[13px] text-gray-500 py-1.5 px-2">
+            <div class="flex gap-4">
+                <a href="#" class="hover:text-[#ca1016]">Tap.az</a>
+                <a href="#" class="hover:text-[#ca1016]">Bina.az</a>
+                <a href="#" class="hover:text-[#ca1016]">Boss.az</a>
+            </div>
+            <div class="flex gap-4 items-center">
+                <span>Dəstək: (012) 526-47-47</span>
+                <a href="#" class="hover:text-[#ca1016]">Yardım</a>
+                <a href="#" class="hover:text-[#ca1016]">RU</a>
+                <a href="#" class="hover:text-[#ca1016]"><i class="far fa-comment-dots"></i> Mesajlar</a>
+                <a href="#" class="hover:text-[#ca1016]"><i class="far fa-heart"></i> Seçilmişlər</a>
+                <a href="#" class="hover:text-[#ca1016]"><i class="far fa-user"></i> Giriş</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-[#ca1016]">
+        <div class="max-w-[1000px] mx-auto flex justify-between items-center py-4 px-2">
+            <div class="flex items-center gap-6">
+                <a href="#" class="text-white text-[18px] font-bold tracking-tight">TURBO.AZ</a>
+                <nav class="hidden md:flex gap-4 text-white text-[14px]">
+                    <a href="#" class="hover:underline font-bold">Bütün elanlar</a>
+                    <a href="#" class="hover:underline">Dilerlər</a>
+                    <a href="#" class="hover:underline relative">
+                        Sifarişlə
+                        <span class="absolute -top-2 -right-3 bg-[#7ed321] text-white text-[10px] px-1 rounded">yeni</span>
+                    </a>
+                    <a href="#" class="hover:underline">Avtokataloq</a>
+                    <a href="#" class="hover:underline">Moto</a>
+                    <a href="#" class="hover:underline">Ehtiyat hissələr və aksesuarlar</a>
+                    <a href="#" class="hover:underline">İcarə</a>
+                </nav>
+            </div>
+            <button class="flex items-center justify-center self-center bg-[#7ed321] hover:bg-[#6cbc1a] h-[40px] rounded-[7px] ml-auto px-[10px] text-[15px] font-medium text-white transition-colors duration-200 gap-2">
+                <i class="fas fa-plus-circle"></i> Yeni elan
+            </button>
+        </div>
+    </div>
+
+    <form class="bg-[#ebedf3] border-b border-gray-200 py-6" id="search-form">
+        <div class="max-w-[1000px] mx-auto px-2">
+            <div class="grid grid-cols-4 gap-3 mb-3">
+                <div class="relative w-full min-w-[82px] select-none custom-select" data-target="marka">
+                    <div class="select-header w-full h-[32px] border border-[#ccc] rounded-[5px] px-[10px] text-[14px] text-[#333] bg-white cursor-pointer flex justify-between items-center hover:border-gray-400 transition-colors">
+                        <span class="select-text truncate text-[#999]">Marka</span>
+                        <i class="fas fa-chevron-down text-[#999] text-[10px] select-icon transition-transform"></i>
+                    </div>
+                    <div class="select-body absolute top-[110%] left-0 w-full min-w-[250px] bg-white border border-[#ccc] rounded-[5px] shadow-lg z-50 hidden flex-col max-h-[300px]">
+                        <div class="p-2 border-b border-gray-100 flex items-center gap-2">
+                            <input type="text" placeholder="Markanı yazın" class="search-input w-full text-[14px] h-[32px] px-[10px] border border-[#ccc] rounded-[5px] outline-none text-[#333]">
+                            <i class="fas fa-chevron-up text-gray-400 text-[14px] cursor-pointer close-dropdown"></i>
+                        </div>
+                        <div class="options-list overflow-y-auto flex-1 min-h-0 py-1">
+                            <div class="option-item px-[10px] py-[6px] text-[14px] text-[#333] hover:bg-[#f2f2f2] cursor-pointer flex items-center gap-2" data-val="">
+                                <i class="fas fa-times text-red-600"></i> Sıfırla
+                            </div>
+                            <div class="option-item px-[10px] py-[6px] text-[14px] text-[#333] hover:bg-[#f2f2f2] cursor-pointer" data-val="BMW">BMW</div>
+                            <div class="option-item px-[10px] py-[6px] text-[14px] text-[#333] hover:bg-[#f2f2f2] cursor-pointer" data-val="Mercedes">Mercedes</div>
+                            <div class="option-item px-[10px] py-[6px] text-[14px] text-[#333] hover:bg-[#f2f2f2] cursor-pointer" data-val="Audi">Audi</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative w-full min-w-[82px] select-none custom-select disabled" data-target="model">
+                    <div class="select-header w-full h-[32px] border border-[#ccc] rounded-[5px] px-[10px] text-[14px] text-[#999] bg-[#f9f9f9] cursor-not-allowed flex justify-between items-center">
+                        <span class="select-text truncate text-[#999]">Model</span>
+                        <i class="fas fa-chevron-down text-[#ccc] text-[10px] select-icon transition-transform"></i>
+                    </div>
+                    <div class="select-body absolute top-[110%] left-0 w-full min-w-[250px] bg-white border border-[#ccc] rounded-[5px] shadow-lg z-50 hidden flex-col max-h-[300px]">
+                        <div class="p-2 border-b border-gray-100 flex items-center gap-2">
+                            <input type="text" placeholder="Modeli yazın" class="search-input w-full text-[14px] h-[32px] px-[10px] border border-[#ccc] rounded-[5px] outline-none text-[#333]">
+                            <i class="fas fa-chevron-up text-gray-400 text-[14px] cursor-pointer close-dropdown"></i>
+                        </div>
+                        <div class="options-list overflow-y-auto flex-1 min-h-0 py-1">
+                            <div class="option-item px-[10px] py-[6px] text-[14px] text-[#333] hover:bg-[#f2f2f2] cursor-pointer flex items-center gap-2" data-val="">
+                                <i class="fas fa-times text-red-600"></i> Sıfırla
+                            </div>
+                            <div class="option-item px-[10px] py-[6px] text-[14px] text-[#333] hover:bg-[#f2f2f2] cursor-pointer" data-val="M5">M5</div>
+                            <div class="option-item px-[10px] py-[6px] text-[14px] text-[#333] hover:bg-[#f2f2f2] cursor-pointer" data-val="X5">X5</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex border border-[#ccc] rounded-[5px] h-[32px] bg-white overflow-hidden items-center">
+                    <input type="radio" name="condition" id="cond_all" class="peer/cond_all hidden" checked>
+                    <label for="cond_all" class="flex-1 text-center text-[14px] text-[#555] cursor-pointer h-full leading-[30px] hover:bg-gray-50 peer-checked/cond_all:bg-[#ca1016] peer-checked/cond_all:text-white transition-colors">Hamısı</label>
+                    <div class="w-[1px] h-full bg-[#ccc]"></div>
+                    <input type="radio" name="condition" id="cond_new" class="peer/cond_new hidden">
+                    <label for="cond_new" class="flex-1 text-center text-[14px] text-[#555] cursor-pointer h-full leading-[30px] hover:bg-gray-50 peer-checked/cond_new:bg-[#ca1016] peer-checked/cond_new:text-white transition-colors">Yeni</label>
+                    <div class="w-[1px] h-full bg-[#ccc]"></div>
+                    <input type="radio" name="condition" id="cond_used" class="peer/cond_used hidden">
+                    <label for="cond_used" class="flex-1 text-center text-[14px] text-[#555] cursor-pointer h-full leading-[30px] hover:bg-gray-50 peer-checked/cond_used:bg-[#ca1016] peer-checked/cond_used:text-white transition-colors">Sürülmüş</label>
+                </div>
+
+                <div class="relative w-full min-w-[82px] select-none custom-select">
+                    <div class="select-header w-full h-[32px] border border-[#ccc] rounded-[5px] px-[10px] text-[14px] text-[#333] bg-white cursor-pointer flex justify-between items-center hover:border-gray-400 transition-colors">
+                        <span class="select-text truncate text-[#999]">Şəhər</span>
+                        <i class="fas fa-chevron-down text-[#999] text-[10px] select-icon transition-transform"></i>
+                    </div>
+                    <div class="select-body absolute top-[110%] left-0 w-full min-w-[200px] bg-white border border-[#ccc] rounded-[5px] shadow-lg z-50 hidden flex-col max-h-[300px]">
+                        <div class="p-2 border-b border-gray-100 flex items-center gap-2">
+                            <input type="text" placeholder="Şəhər yazın" class="search-input w-full text-[14px] h-[32px] px-[10px] border border-[#ccc] rounded-[5px] outline-none text-[#333]">
+                            <i class="fas fa-chevron-up text-gray-400 text-[14px] cursor-pointer close-dropdown"></i>
+                        </div>
+                        <div class="options-list overflow-y-auto flex-1 min-h-0 py-1">
+                            <div class="option-item px-[10px] py-[6px] text-[14px] text-[#333] hover:bg-[#f2f2f2] cursor-pointer flex items-center gap-2" data-val="">
+                                <i class="fas fa-times text-red-600"></i> Sıfırla
+                            </div>
+                            <div class="option-item px-[10px] py-[6px] text-[14px] text-[#333] hover:bg-[#f2f2f2] cursor-pointer" data-val="Bakı">Bakı</div>
+                            <div class="option-item px-[10px] py-[6px] text-[14px] text-[#333] hover:bg-[#f2f2f2] cursor-pointer" data-val="Gəncə">Gəncə</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-4 gap-3 mb-3">
+                <div class="flex border border-[#ccc] rounded-[5px] h-[32px] bg-white overflow-hidden items-center relative hover:border-gray-400 transition-colors group">
+                    <input type="text" id="price_min" class="w-1/2 h-full px-[10px] text-[14px] outline-none text-[#333] pt-1" placeholder=" ">
+                    <label for="price_min" class="absolute left-[10px] text-[14px] text-[#999] pointer-events-none transition-all group-focus-within:opacity-0" style="top: 50%; transform: translateY(-50%);">Qiymət, min.</label>
+                    <div class="w-[1px] h-full bg-[#ccc]"></div>
+                    <input type="text" id="price_max" class="w-1/2 h-full px-[10px] text-[14px] outline-none text-[#333] pt-1" placeholder=" ">
+                    <label for="price_max" class="absolute left-[50%] ml-[10px] text-[14px] text-[#999] pointer-events-none transition-all group-focus-within:opacity-0" style="top: 50%; transform: translateY(-50%);">maks.</label>
+                </div>
+                
+                <div class="flex gap-2">
+                    <div class="relative flex-[0.7] min-w-[70px] select-none custom-select">
+                        <div class="select-header w-full h-[32px] border border-[#ccc] rounded-[5px] px-[10px] text-[14px] text-[#333] bg-white cursor-pointer flex justify-between items-center hover:border-gray-400 transition-colors">
+                            <span class="select-text truncate font-medium text-[#333]">AZN</span>
+                            <i class="fas fa-chevron-down text-[#999] text-[10px] select-icon transition-transform"></i>
+                        </div>
+                        <div class="select-body absolute top-[110%] left-0 w-full min-w-[80px] bg-white border border-[#ccc] rounded-[5px] shadow-lg z-50 hidden flex-col max-h-[300px]">
+                            <div class="options-list overflow-y-auto flex-1 min-h-0 py-1">
+                                <div class="option-item px-[10px] py-[6px] text-[14px] text-[#333] hover:bg-[#f2f2f2] cursor-pointer" data-val="AZN">AZN</div>
+                                <div class="option-item px-[10px] py-[6px] text-[14px] text-[#333] hover:bg-[#f2f2f2] cursor-pointer" data-val="USD">USD</div>
+                                <div class="option-item px-[10px] py-[6px] text-[14px] text-[#333] hover:bg-[#f2f2f2] cursor-pointer" data-val="EUR">EUR</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <input type="checkbox" id="kredit" class="peer/kredit hidden">
+                    <label for="kredit" class="flex-1 border border-[#ccc] rounded-[5px] h-[32px] bg-white text-[14px] text-[#555] flex items-center justify-center cursor-pointer hover:bg-gray-50 peer-checked/kredit:bg-[#ca1016] peer-checked/kredit:text-white peer-checked/kredit:border-[#ca1016] transition-colors">Kredit</label>
+                    
+                    <input type="checkbox" id="barter" class="peer/barter hidden">
+                    <label for="barter" class="flex-1 border border-[#ccc] rounded-[5px] h-[32px] bg-white text-[14px] text-[#555] flex items-center justify-center cursor-pointer hover:bg-gray-50 peer-checked/barter:bg-[#ca1016] peer-checked/barter:text-white peer-checked/barter:border-[#ca1016] transition-colors">Barter</label>
+                </div>
+
+                <div class="relative w-full min-w-[82px] select-none custom-select">
+                    <div class="select-header w-full h-[32px] border border-[#ccc] rounded-[5px] px-[10px] text-[14px] text-[#333] bg-white cursor-pointer flex justify-between items-center hover:border-gray-400 transition-colors">
+                        <span class="select-text truncate text-[#999]">Ban növü</span>
+                        <i class="fas fa-chevron-down text-[#999] text-[10px] select-icon transition-transform"></i>
+                    </div>
+                    <div class="select-body absolute top-[110%] left-0 w-full min-w-[200px] bg-white border border-[#ccc] rounded-[5px] shadow-lg z-50 hidden flex-col max-h-[300px]">
+                        <div class="options-list overflow-y-auto flex-1 min-h-0 py-1">
+                            <div class="option-item px-[10px] py-[6px] text-[14px] text-[#333] hover:bg-[#f2f2f2] cursor-pointer flex items-center gap-2" data-val="">
+                                <i class="fas fa-times text-red-600"></i> Sıfırla
+                            </div>
+                            <div class="option-item px-[10px] py-[6px] text-[14px] text-[#333] hover:bg-[#f2f2f2] cursor-pointer" data-val="Sedan">Sedan</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex border border-[#ccc] rounded-[5px] h-[32px] bg-white items-center hover:border-gray-400 transition-colors">
+                    <div class="relative w-1/2 h-full select-none custom-select">
+                        <div class="select-header w-full h-full px-[10px] text-[14px] text-[#333] cursor-pointer flex justify-between items-center">
+                            <span class="select-text truncate text-[#999]">İl, min.</span>
+                            <i class="fas fa-chevron-down text-[#999] text-[10px] select-icon transition-transform"></i>
+                        </div>
+                        <div class="select-body absolute top-[110%] left-0 w-full min-w-[150px] bg-white border border-[#ccc] rounded-[5px] shadow-lg z-50 hidden flex-col">
+                            <div class="options-list overflow-y-auto max-h-[200px] py-1" id="year_min_list">
+                                <div class="option-item px-[10px] py-[6px] text-[14px] text-[#333] hover:bg-[#f2f2f2] cursor-pointer flex items-center gap-2" data-val="">
+                                    <i class="fas fa-times text-red-600"></i> Sıfırla
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="w-[1px] h-full bg-[#ccc]"></div>
+                    
+                    <div class="relative w-1/2 h-full select-none custom-select">
+                        <div class="select-header w-full h-full px-[10px] text-[14px] text-[#333] cursor-pointer flex justify-between items-center">
+                            <span class="select-text truncate text-[#999]">maks.</span>
+                            <i class="fas fa-chevron-down text-[#999] text-[10px] select-icon transition-transform"></i>
+                        </div>
+                        <div class="select-body absolute top-[110%] left-0 w-full min-w-[150px] bg-white border border-[#ccc] rounded-[5px] shadow-lg z-50 hidden flex-col">
+                            <div class="options-list overflow-y-auto max-h-[200px] py-1" id="year_max_list">
+                                <div class="option-item px-[10px] py-[6px] text-[14px] text-[#333] hover:bg-[#f2f2f2] cursor-pointer flex items-center gap-2" data-val="">
+                                    <i class="fas fa-times text-red-600"></i> Sıfırla
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="extra-filters" class="hidden">
+                <div class="grid grid-cols-4 gap-3 mb-3">
+                    <div class="relative w-full min-w-[82px] select-none custom-select" data-target="color">
+                        <div class="select-header w-full h-[32px] border border-[#ccc] rounded-[5px] px-[10px] text-[14px] text-[#333] bg-white cursor-pointer flex justify-between items-center hover:border-gray-400 transition-colors">
+                            <span class="select-text truncate text-[#999]">Rəng</span>
+                            <i class="fas fa-chevron-down text-[#999] text-[10px] select-icon transition-transform"></i>
+                        </div>
+                        <div class="select-body absolute top-[110%] left-0 w-full min-w-[200px] bg-white border border-[#ccc] rounded-[5px] shadow-lg z-50 hidden flex-col">
+                            <div class="options-list overflow-y-auto max-h-[250px] py-1">
+                                <div class="option-item px-[10px] py-[10px] text-[14px] text-[#333] hover:bg-[#f2f2f2] cursor-pointer flex items-center gap-2" data-val="">
+                                    <i class="fas fa-times text-red-600"></i> Sıfırla
+                                </div>
+                                <div class="option-item px-[10px] py-[8px] hover:bg-[#f2f2f2] cursor-pointer flex items-center justify-between" data-val="Qara">
+                                    <div class="flex items-center gap-3">
+                                        <div class="w-5 h-5 rounded-full bg-black border border-gray-300"></div>
+                                        <span class="text-[15px] text-[#333]">Qara</span>
+                                    </div>
+                                    <input type="checkbox" class="w-5 h-5 border-[#ccc] rounded pointer-events-none accent-[#ca1016]">
+                                </div>
+                                <div class="option-item px-[10px] py-[8px] hover:bg-[#f2f2f2] cursor-pointer flex items-center justify-between" data-val="Yaş Asfalt">
+                                    <div class="flex items-center gap-3">
+                                        <div class="w-5 h-5 rounded-full bg-[#4a4a4a] border border-gray-300"></div>
+                                        <span class="text-[15px] text-[#333]">Yaş Asfalt</span>
+                                    </div>
+                                    <input type="checkbox" class="w-5 h-5 border-[#ccc] rounded pointer-events-none accent-[#ca1016]">
+                                </div>
+                                <div class="option-item px-[10px] py-[8px] hover:bg-[#f2f2f2] cursor-pointer flex items-center justify-between" data-val="Boz">
+                                    <div class="flex items-center gap-3">
+                                        <div class="w-5 h-5 rounded-full bg-[#808080] border border-gray-300"></div>
+                                        <span class="text-[15px] text-[#333]">Boz</span>
+                                    </div>
+                                    <input type="checkbox" class="w-5 h-5 border-[#ccc] rounded pointer-events-none accent-[#ca1016]">
+                                </div>
+                                <div class="option-item px-[10px] py-[8px] hover:bg-[#f2f2f2] cursor-pointer flex items-center justify-between" data-val="Gümüşü">
+                                    <div class="flex items-center gap-3">
+                                        <div class="w-5 h-5 rounded-full bg-[#c0c0c0] border border-gray-300"></div>
+                                        <span class="text-[15px] text-[#333]">Gümüşü</span>
+                                    </div>
+                                    <input type="checkbox" class="w-5 h-5 border-[#ccc] rounded pointer-events-none accent-[#ca1016]">
+                                </div>
+                                <div class="option-item px-[10px] py-[8px] hover:bg-[#f2f2f2] cursor-pointer flex items-center justify-between" data-val="Ağ">
+                                    <div class="flex items-center gap-3">
+                                        <div class="w-5 h-5 rounded-full bg-white border border-gray-300"></div>
+                                        <span class="text-[15px] text-[#333]">Ağ</span>
+                                    </div>
+                                    <input type="checkbox" class="w-5 h-5 border-[#ccc] rounded pointer-events-none accent-[#ca1016]">
+                                </div>
+                                <div class="option-item px-[10px] py-[8px] hover:bg-[#f2f2f2] cursor-pointer flex items-center justify-between" data-val="Bej">
+                                    <div class="flex items-center gap-3">
+                                        <div class="w-5 h-5 rounded-full bg-[#f5f5dc] border border-gray-300"></div>
+                                        <span class="text-[15px] text-[#333]">Bej</span>
+                                    </div>
+                                    <input type="checkbox" class="w-5 h-5 border-[#ccc] rounded pointer-events-none accent-[#ca1016]">
+                                </div>
+                                <div class="option-item px-[10px] py-[8px] hover:bg-[#f2f2f2] cursor-pointer flex items-center justify-between" data-val="Tünd qırmızı">
+                                    <div class="flex items-center gap-3">
+                                        <div class="w-5 h-5 rounded-full bg-[#8b0000] border border-gray-300"></div>
+                                        <span class="text-[15px] text-[#333]">Tünd qırmızı</span>
+                                    </div>
+                                    <input type="checkbox" class="w-5 h-5 border-[#ccc] rounded pointer-events-none accent-[#ca1016]">
+                                </div>
+                                <div class="option-item px-[10px] py-[8px] hover:bg-[#f2f2f2] cursor-pointer flex items-center justify-between" data-val="Qırmızı">
+                                    <div class="flex items-center gap-3">
+                                        <div class="w-5 h-5 rounded-full bg-[#ff0000] border border-gray-300"></div>
+                                        <span class="text-[15px] text-[#333]">Qırmızı</span>
+                                    </div>
+                                    <input type="checkbox" class="w-5 h-5 border-[#ccc] rounded pointer-events-none accent-[#ca1016]">
+                                </div>
+                                <div class="option-item px-[10px] py-[8px] hover:bg-[#f2f2f2] cursor-pointer flex items-center justify-between" data-val="Mavi">
+                                    <div class="flex items-center gap-3">
+                                        <div class="w-5 h-5 rounded-full bg-[#0000ff] border border-gray-300"></div>
+                                        <span class="text-[15px] text-[#333]">Mavi</span>
+                                    </div>
+                                    <input type="checkbox" class="w-5 h-5 border-[#ccc] rounded pointer-events-none accent-[#ca1016]">
+                                </div>
+                                <div class="option-item px-[10px] py-[8px] hover:bg-[#f2f2f2] cursor-pointer flex items-center justify-between" data-val="Tünd göy">
+                                    <div class="flex items-center gap-3">
+                                        <div class="w-5 h-5 rounded-full bg-[#000080] border border-gray-300"></div>
+                                        <span class="text-[15px] text-[#333]">Tünd göy</span>
+                                    </div>
+                                    <input type="checkbox" class="w-5 h-5 border-[#ccc] rounded pointer-events-none accent-[#ca1016]">
+                                </div>
+                                <div class="option-item px-[10px] py-[8px] hover:bg-[#f2f2f2] cursor-pointer flex items-center justify-between" data-val="Yaşıl">
+                                    <div class="flex items-center gap-3">
+                                        <div class="w-5 h-5 rounded-full bg-[#008000] border border-gray-300"></div>
+                                        <span class="text-[15px] text-[#333]">Yaşıl</span>
+                                    </div>
+                                    <input type="checkbox" class="w-5 h-5 border-[#ccc] rounded pointer-events-none accent-[#ca1016]">
+                                </div>
+                                <div class="option-item px-[10px] py-[8px] hover:bg-[#f2f2f2] cursor-pointer flex items-center justify-between" data-val="Sarı">
+                                    <div class="flex items-center gap-3">
+                                        <div class="w-5 h-5 rounded-full bg-[#ffff00] border border-gray-300"></div>
+                                        <span class="text-[15px] text-[#333]">Sarı</span>
+                                    </div>
+                                    <input type="checkbox" class="w-5 h-5 border-[#ccc] rounded pointer-events-none accent-[#ca1016]">
+                                </div>
+                                <div class="option-item px-[10px] py-[8px] hover:bg-[#f2f2f2] cursor-pointer flex items-center justify-between" data-val="Qəhvəyi">
+                                    <div class="flex items-center gap-3">
+                                        <div class="w-5 h-5 rounded-full bg-[#8b4513] border border-gray-300"></div>
+                                        <span class="text-[15px] text-[#333]">Qəhvəyi</span>
+                                    </div>
+                                    <input type="checkbox" class="w-5 h-5 border-[#ccc] rounded pointer-events-none accent-[#ca1016]">
+                                </div>
+                                <div class="option-item px-[10px] py-[8px] hover:bg-[#f2f2f2] cursor-pointer flex items-center justify-between" data-val="Narıncı">
+                                    <div class="flex items-center gap-3">
+                                        <div class="w-5 h-5 rounded-full bg-[#ffa500] border border-gray-300"></div>
+                                        <span class="text-[15px] text-[#333]">Narıncı</span>
+                                    </div>
+                                    <input type="checkbox" class="w-5 h-5 border-[#ccc] rounded pointer-events-none accent-[#ca1016]">
+                                </div>
+                                <div class="option-item px-[10px] py-[8px] hover:bg-[#f2f2f2] cursor-pointer flex items-center justify-between" data-val="Bənövşəyi">
+                                    <div class="flex items-center gap-3">
+                                        <div class="w-5 h-5 rounded-full bg-[#800080] border border-gray-300"></div>
+                                        <span class="text-[15px] text-[#333]">Bənövşəyi</span>
+                                    </div>
+                                    <input type="checkbox" class="w-5 h-5 border-[#ccc] rounded pointer-events-none accent-[#ca1016]">
+                                </div>
+                                <div class="option-item px-[10px] py-[8px] hover:bg-[#f2f2f2] cursor-pointer flex items-center justify-between" data-val="Çəhrayı">
+                                    <div class="flex items-center gap-3">
+                                        <div class="w-5 h-5 rounded-full bg-[#ffc0cb] border border-gray-300"></div>
+                                        <span class="text-[15px] text-[#333]">Çəhrayı</span>
+                                    </div>
+                                    <input type="checkbox" class="w-5 h-5 border-[#ccc] rounded pointer-events-none accent-[#ca1016]">
+                                </div>
+                                <div class="option-item px-[10px] py-[8px] hover:bg-[#f2f2f2] cursor-pointer flex items-center justify-between" data-val="Qızılı">
+                                    <div class="flex items-center gap-3">
+                                        <div class="w-5 h-5 rounded-full bg-[#ffd700] border border-gray-300"></div>
+                                        <span class="text-[15px] text-[#333]">Qızılı</span>
+                                    </div>
+                                    <input type="checkbox" class="w-5 h-5 border-[#ccc] rounded pointer-events-none accent-[#ca1016]">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative w-full min-w-[82px] select-none custom-select">
+                        <div class="select-header w-full h-[32px] border border-[#ccc] rounded-[5px] px-[10px] text-[14px] text-[#333] bg-white cursor-pointer flex justify-between items-center hover:border-gray-400 transition-colors">
+                            <span class="select-text truncate text-[#999]">Yanacaq növü</span>
+                            <i class="fas fa-chevron-down text-[#999] text-[10px] select-icon transition-transform"></i>
+                        </div>
+                        <div class="select-body absolute top-[110%] left-0 w-full min-w-[150px] bg-white border border-[#ccc] rounded-[5px] shadow-lg z-50 hidden flex-col">
+                            <div class="options-list overflow-y-auto max-h-[200px] py-1">
+                                <div class="option-item px-[10px] py-[6px] text-[14px] text-[#333] hover:bg-[#f2f2f2] cursor-pointer flex items-center gap-2" data-val="">
+                                    <i class="fas fa-times text-red-600"></i> Sıfırla
+                                </div>
+                                <div class="option-item px-[10px] py-[6px] text-[14px] text-[#333] hover:bg-[#f2f2f2] cursor-pointer" data-val="Benzin">Benzin</div>
+                                <div class="option-item px-[10px] py-[6px] text-[14px] text-[#333] hover:bg-[#f2f2f2] cursor-pointer" data-val="Dizel">Dizel</div>
+                                <div class="option-item px-[10px] py-[6px] text-[14px] text-[#333] hover:bg-[#f2f2f2] cursor-pointer" data-val="Qaz">Qaz</div>
+                                <div class="option-item px-[10px] py-[6px] text-[14px] text-[#333] hover:bg-[#f2f2f2] cursor-pointer" data-val="Elektrik">Elektrik</div>
+                                <div class="option-item px-[10px] py-[6px] text-[14px] text-[#333] hover:bg-[#f2f2f2] cursor-pointer" data-val="Hibrid">Hibrid</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative w-full min-w-[82px] select-none custom-select">
+                        <div class="select-header w-full h-[32px] border border-[#ccc] rounded-[5px] px-[10px] text-[14px] text-[#333] bg-white cursor-pointer flex justify-between items-center hover:border-gray-400 transition-colors">
+                            <span class="select-text truncate text-[#999]">Ötürücü</span>
+                            <i class="fas fa-chevron-down text-[#999] text-[10px] select-icon transition-transform"></i>
+                        </div>
+                        <div class="select-body absolute top-[110%] left-0 w-full min-w-[150px] bg-white border border-[#ccc] rounded-[5px] shadow-lg z-50 hidden flex-col">
+                            <div class="options-list overflow-y-auto max-h-[200px] py-1">
+                                <div class="option-item px-[10px] py-[6px] text-[14px] text-[#333] hover:bg-[#f2f2f2] cursor-pointer flex items-center gap-2" data-val="">
+                                    <i class="fas fa-times text-red-600"></i> Sıfırla
+                                </div>
+                                <div class="option-item px-[10px] py-[6px] text-[14px] text-[#333] hover:bg-[#f2f2f2] cursor-pointer" data-val="Arxa">Arxa</div>
+                                <div class="option-item px-[10px] py-[6px] text-[14px] text-[#333] hover:bg-[#f2f2f2] cursor-pointer" data-val="Ön">Ön</div>
+                                <div class="option-item px-[10px] py-[6px] text-[14px] text-[#333] hover:bg-[#f2f2f2] cursor-pointer" data-val="Tam">Tam</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative w-full min-w-[82px] select-none custom-select">
+                        <div class="select-header w-full h-[32px] border border-[#ccc] rounded-[5px] px-[10px] text-[14px] text-[#333] bg-white cursor-pointer flex justify-between items-center hover:border-gray-400 transition-colors">
+                            <span class="select-text truncate text-[#999]">Sürətlər qutusu</span>
+                            <i class="fas fa-chevron-down text-[#999] text-[10px] select-icon transition-transform"></i>
+                        </div>
+                        <div class="select-body absolute top-[110%] left-0 w-full min-w-[150px] bg-white border border-[#ccc] rounded-[5px] shadow-lg z-50 hidden flex-col">
+                            <div class="options-list overflow-y-auto max-h-[200px] py-1">
+                                <div class="option-item px-[10px] py-[6px] text-[14px] text-[#333] hover:bg-[#f2f2f2] cursor-pointer flex items-center gap-2" data-val="">
+                                    <i class="fas fa-times text-red-600"></i> Sıfırla
+                                </div>
+                                <div class="option-item px-[10px] py-[6px] text-[14px] text-[#333] hover:bg-[#f2f2f2] cursor-pointer" data-val="Mexanika">Mexanika</div>
+                                <div class="option-item px-[10px] py-[6px] text-[14px] text-[#333] hover:bg-[#f2f2f2] cursor-pointer" data-val="Avtomat">Avtomat</div>
+                                <div class="option-item px-[10px] py-[6px] text-[14px] text-[#333] hover:bg-[#f2f2f2] cursor-pointer" data-val="Robotlaşdırılmış">Robotlaşdırılmış</div>
+                                <div class="option-item px-[10px] py-[6px] text-[14px] text-[#333] hover:bg-[#f2f2f2] cursor-pointer" data-val="Variator">Variator</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-4 gap-3 mb-3">
+                    <div class="flex border border-[#ccc] rounded-[5px] h-[32px] bg-white items-center hover:border-gray-400 transition-colors col-span-1">
+                        <div class="relative w-1/2 h-full select-none custom-select">
+                            <div class="select-header w-full h-full px-[10px] text-[14px] text-[#333] cursor-pointer flex justify-between items-center">
+                                <span class="select-text truncate text-[#999]">Həcm (sm³), min.</span>
+                                <i class="fas fa-chevron-down text-[#999] text-[10px] select-icon transition-transform"></i>
+                            </div>
+                            <div class="select-body absolute top-[110%] left-0 w-full min-w-[150px] bg-white border border-[#ccc] rounded-[5px] shadow-lg z-50 hidden flex-col">
+                                <div class="options-list overflow-y-auto max-h-[200px] py-1">
+                                    <div class="option-item px-[10px] py-[6px] text-[14px] text-[#333] hover:bg-[#f2f2f2] cursor-pointer flex items-center gap-2" data-val="">
+                                        <i class="fas fa-times text-red-600"></i> Sıfırla
+                                    </div>
+                                    <div class="option-item px-[10px] py-[6px] text-[14px] text-[#333] hover:bg-[#f2f2f2] cursor-pointer" data-val="1000">1000</div>
+                                    <div class="option-item px-[10px] py-[6px] text-[14px] text-[#333] hover:bg-[#f2f2f2] cursor-pointer" data-val="1500">1500</div>
+                                    <div class="option-item px-[10px] py-[6px] text-[14px] text-[#333] hover:bg-[#f2f2f2] cursor-pointer" data-val="2000">2000</div>
+                                    <div class="option-item px-[10px] py-[6px] text-[14px] text-[#333] hover:bg-[#f2f2f2] cursor-pointer" data-val="2500">2500</div>
+                                    <div class="option-item px-[10px] py-[6px] text-[14px] text-[#333] hover:bg-[#f2f2f2] cursor-pointer" data-val="3000">3000</div>
+                                    <div class="option-item px-[10px] py-[6px] text-[14px] text-[#333] hover:bg-[#f2f2f2] cursor-pointer" data-val="4000">4000</div>
+                                    <div class="option-item px-[10px] py-[6px] text-[14px] text-[#333] hover:bg-[#f2f2f2] cursor-pointer" data-val="5000">5000</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-[1px] h-full bg-[#ccc]"></div>
+                        <div class="relative w-1/2 h-full select-none custom-select">
+                            <div class="select-header w-full h-full px-[10px] text-[14px] text-[#333] cursor-pointer flex justify-between items-center">
+                                <span class="select-text truncate text-[#999]">maks.</span>
+                                <i class="fas fa-chevron-down text-[#999] text-[10px] select-icon transition-transform"></i>
+                            </div>
+                            <div class="select-body absolute top-[110%] left-0 w-full min-w-[150px] bg-white border border-[#ccc] rounded-[5px] shadow-lg z-50 hidden flex-col">
+                                <div class="options-list overflow-y-auto max-h-[200px] py-1">
+                                    <div class="option-item px-[10px] py-[6px] text-[14px] text-[#333] hover:bg-[#f2f2f2] cursor-pointer flex items-center gap-2" data-val="">
+                                        <i class="fas fa-times text-red-600"></i> Sıfırla
+                                    </div>
+                                    <div class="option-item px-[10px] py-[6px] text-[14px] text-[#333] hover:bg-[#f2f2f2] cursor-pointer" data-val="1000">1000</div>
+                                    <div class="option-item px-[10px] py-[6px] text-[14px] text-[#333] hover:bg-[#f2f2f2] cursor-pointer" data-val="1500">1500</div>
+                                    <div class="option-item px-[10px] py-[6px] text-[14px] text-[#333] hover:bg-[#f2f2f2] cursor-pointer" data-val="2000">2000</div>
+                                    <div class="option-item px-[10px] py-[6px] text-[14px] text-[#333] hover:bg-[#f2f2f2] cursor-pointer" data-val="2500">2500</div>
+                                    <div class="option-item px-[10px] py-[6px] text-[14px] text-[#333] hover:bg-[#f2f2f2] cursor-pointer" data-val="3000">3000</div>
+                                    <div class="option-item px-[10px] py-[6px] text-[14px] text-[#333] hover:bg-[#f2f2f2] cursor-pointer" data-val="4000">4000</div>
+                                    <div class="option-item px-[10px] py-[6px] text-[14px] text-[#333] hover:bg-[#f2f2f2] cursor-pointer" data-val="5000">5000</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex border border-[#ccc] rounded-[5px] h-[32px] bg-white overflow-hidden items-center relative hover:border-gray-400 transition-colors group">
+                        <input type="text" id="pow_min" class="w-1/2 h-full px-[10px] text-[14px] outline-none text-[#333] pt-1" placeholder=" ">
+                        <label for="pow_min" class="absolute left-[10px] text-[14px] text-[#999] pointer-events-none transition-all group-focus-within:opacity-0" style="top: 50%; transform: translateY(-50%);">Güc (a. g.), min.</label>
+                        <div class="w-[1px] h-full bg-[#ccc]"></div>
+                        <input type="text" id="pow_max" class="w-1/2 h-full px-[10px] text-[14px] outline-none text-[#333] pt-1" placeholder=" ">
+                        <label for="pow_max" class="absolute left-[50%] ml-[10px] text-[14px] text-[#999] pointer-events-none transition-all group-focus-within:opacity-0" style="top: 50%; transform: translateY(-50%);">maks.</label>
+                    </div>
+
+                    <div class="flex border border-[#ccc] rounded-[5px] h-[32px] bg-white overflow-hidden items-center relative hover:border-gray-400 transition-colors group">
+                        <input type="text" id="mile_min" class="w-1/2 h-full px-[10px] text-[14px] outline-none text-[#333] pt-1" placeholder=" ">
+                        <label for="mile_min" class="absolute left-[10px] text-[14px] text-[#999] pointer-events-none transition-all group-focus-within:opacity-0" style="top: 50%; transform: translateY(-50%);">Yürüş (km), min.</label>
+                        <div class="w-[1px] h-full bg-[#ccc]"></div>
+                        <input type="text" id="mile_max" class="w-1/2 h-full px-[10px] text-[14px] outline-none text-[#333] pt-1" placeholder=" ">
+                        <label for="mile_max" class="absolute left-[50%] ml-[10px] text-[14px] text-[#999] pointer-events-none transition-all group-focus-within:opacity-0" style="top: 50%; transform: translateY(-50%);">maks.</label>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-4 gap-3 mb-3">
+                    <div class="flex border border-[#ccc] rounded-[5px] h-[32px] bg-white overflow-hidden items-center">
+                        <input type="radio" name="seller" id="seller_all" class="peer/seller_all hidden" checked>
+                        <label for="seller_all" class="flex-1 text-center text-[14px] text-[#555] cursor-pointer h-full leading-[30px] hover:bg-gray-50 peer-checked/seller_all:bg-[#ca1016] peer-checked/seller_all:text-white transition-colors">Hamısı</label>
+                        <div class="w-[1px] h-full bg-[#ccc]"></div>
+                        <input type="radio" name="seller" id="seller_dealer" class="peer/seller_dealer hidden">
+                        <label for="seller_dealer" class="flex-1 text-center text-[14px] text-[#555] cursor-pointer h-full leading-[30px] hover:bg-gray-50 peer-checked/seller_dealer:bg-[#ca1016] peer-checked/seller_dealer:text-white transition-colors">Dilerlər</label>
+                        <div class="w-[1px] h-full bg-[#ccc]"></div>
+                        <input type="radio" name="seller" id="seller_personal" class="peer/seller_personal hidden">
+                        <label for="seller_personal" class="flex-1 text-center text-[14px] text-[#555] cursor-pointer h-full leading-[30px] hover:bg-gray-50 peer-checked/seller_personal:bg-[#ca1016] peer-checked/seller_personal:text-white transition-colors">Şəxsi</label>
+                    </div>
+
+                    <div class="relative w-full min-w-[82px] select-none custom-select">
+                        <div class="select-header w-full h-[32px] border border-[#ccc] rounded-[5px] px-[10px] text-[14px] text-[#333] bg-white cursor-pointer flex justify-between items-center hover:border-gray-400 transition-colors">
+                            <span class="select-text truncate text-[#999]">Yerlərin sayı</span>
+                            <i class="fas fa-chevron-down text-[#999] text-[10px] select-icon transition-transform"></i>
+                        </div>
+                        <div class="select-body absolute top-[110%] left-0 w-full min-w-[150px] bg-white border border-[#ccc] rounded-[5px] shadow-lg z-50 hidden flex-col">
+                            <div class="options-list overflow-y-auto max-h-[200px] py-1">
+                                <div class="option-item px-[10px] py-[6px] text-[14px] text-[#333] hover:bg-[#f2f2f2] cursor-pointer flex items-center gap-2" data-val="">
+                                    <i class="fas fa-times text-red-600"></i> Sıfırla
+                                </div>
+                                <div class="option-item px-[10px] py-[6px] text-[14px] text-[#333] hover:bg-[#f2f2f2] cursor-pointer" data-val="1">1</div>
+                                <div class="option-item px-[10px] py-[6px] text-[14px] text-[#333] hover:bg-[#f2f2f2] cursor-pointer" data-val="2">2</div>
+                                <div class="option-item px-[10px] py-[6px] text-[14px] text-[#333] hover:bg-[#f2f2f2] cursor-pointer" data-val="3">3</div>
+                                <div class="option-item px-[10px] py-[6px] text-[14px] text-[#333] hover:bg-[#f2f2f2] cursor-pointer" data-val="4">4</div>
+                                <div class="option-item px-[10px] py-[6px] text-[14px] text-[#333] hover:bg-[#f2f2f2] cursor-pointer" data-val="5">5</div>
+                                <div class="option-item px-[10px] py-[6px] text-[14px] text-[#333] hover:bg-[#f2f2f2] cursor-pointer" data-val="6">6</div>
+                                <div class="option-item px-[10px] py-[6px] text-[14px] text-[#333] hover:bg-[#f2f2f2] cursor-pointer" data-val="7">7</div>
+                                <div class="option-item px-[10px] py-[6px] text-[14px] text-[#333] hover:bg-[#f2f2f2] cursor-pointer" data-val="8+">8+</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="relative w-full min-w-[82px] select-none custom-select">
+                        <div class="select-header w-full h-[32px] border border-[#ccc] rounded-[5px] px-[10px] text-[14px] text-[#333] bg-white cursor-pointer flex justify-between items-center hover:border-gray-400 transition-colors peer-checked:border-[#ca1016] peer-checked:text-[#ca1016] peer-checked:bg-[#fdf0f0]">
+                            <span class="select-text truncate text-[#999]">Hansı bazar üçün yığılıb</span>
+                            <i class="fas fa-chevron-down text-[#999] text-[10px] select-icon transition-transform"></i>
+                        </div>
+                        <div class="select-body absolute top-[110%] left-0 w-full min-w-[150px] bg-white border border-[#ccc] rounded-[5px] shadow-lg z-50 hidden flex-col">
+                            <div class="options-list overflow-y-auto max-h-[200px] py-1">
+                                <div class="option-item px-[10px] py-[6px] text-[14px] text-[#333] hover:bg-[#f2f2f2] cursor-pointer flex items-center gap-2" data-val="">
+                                    <i class="fas fa-times text-red-600"></i> Sıfırla
+                                </div>
+                                <div class="option-item px-[10px] py-[6px] text-[14px] text-[#333] hover:bg-[#f2f2f2] cursor-pointer" data-val="Amerika">Amerika</div>
+                                <div class="option-item px-[10px] py-[6px] text-[14px] text-[#333] hover:bg-[#f2f2f2] cursor-pointer" data-val="Avropa">Avropa</div>
+                                <div class="option-item px-[10px] py-[6px] text-[14px] text-[#333] hover:bg-[#f2f2f2] cursor-pointer" data-val="Dubay">Dubay</div>
+                                <div class="option-item px-[10px] py-[6px] text-[14px] text-[#333] hover:bg-[#f2f2f2] cursor-pointer" data-val="Koreya">Koreya</div>
+                                <div class="option-item px-[10px] py-[6px] text-[14px] text-[#333] hover:bg-[#f2f2f2] cursor-pointer" data-val="Rusiya">Rusiya</div>
+                                <div class="option-item px-[10px] py-[6px] text-[14px] text-[#333] hover:bg-[#f2f2f2] cursor-pointer" data-val="Rəsmi diler">Rəsmi diler</div>
+                                <div class="option-item px-[10px] py-[6px] text-[14px] text-[#333] hover:bg-[#f2f2f2] cursor-pointer" data-val="Yaponiya">Yaponiya</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-3">
+                        <input type="checkbox" id="no_damage" class="feature-checkbox hidden peer">
+                        <label for="no_damage" class="border border-[#ccc] rounded-[5px] h-[32px] bg-white px-4 text-[14px] text-[#555] flex items-center justify-center cursor-pointer hover:border-gray-400 transition-colors peer-checked:border-[#ca1016] peer-checked:text-[#ca1016] peer-checked:bg-[#fdf0f0] whitespace-nowrap">Vuruğu yoxdur</label>
+                    </div>
+                </div>
+
+                <div class="flex flex-wrap gap-3 mb-6">
+                    <div>
+                        <input type="checkbox" id="no_color" class="feature-checkbox hidden peer">
+                        <label for="no_color" class="border border-[#ccc] rounded-[5px] h-[32px] bg-white px-4 text-[14px] text-[#555] flex items-center justify-center cursor-pointer hover:border-gray-400 transition-colors peer-checked:border-[#ca1016] peer-checked:text-[#ca1016] peer-checked:bg-[#fdf0f0]">Rənglənməyib</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="crashed" class="feature-checkbox hidden peer">
+                        <label for="crashed" class="border border-[#ccc] rounded-[5px] h-[32px] bg-white px-4 text-[14px] text-[#555] flex items-center justify-center cursor-pointer hover:border-gray-400 transition-colors peer-checked:border-[#ca1016] peer-checked:text-[#ca1016] peer-checked:bg-[#fdf0f0]">Yalnız qəzalı avtomobillər</label>
+                    </div>
+                </div>
+
+                <div class="mb-4">
+                    <h3 class="text-[14px] mb-3 text-[#333]">Avtomobilin təchizatı</h3>
+                    <div class="flex flex-wrap gap-x-2 gap-y-3">
+                        <div><input type="checkbox" id="f1" class="feature-checkbox hidden peer"><label for="f1" class="border border-[#ccc] rounded-[5px] h-[32px] bg-white px-3 text-[14px] text-[#555] flex items-center cursor-pointer hover:border-gray-400 transition-colors peer-checked:border-[#ca1016] peer-checked:text-[#ca1016] peer-checked:bg-[#fdf0f0]">Yüngül lehimli disklər</label></div>
+                        <div><input type="checkbox" id="f2" class="feature-checkbox hidden peer"><label for="f2" class="border border-[#ccc] rounded-[5px] h-[32px] bg-white px-3 text-[14px] text-[#555] flex items-center cursor-pointer hover:border-gray-400 transition-colors peer-checked:border-[#ca1016] peer-checked:text-[#ca1016] peer-checked:bg-[#fdf0f0]">ABS</label></div>
+                        <div><input type="checkbox" id="f3" class="feature-checkbox hidden peer"><label for="f3" class="border border-[#ccc] rounded-[5px] h-[32px] bg-white px-3 text-[14px] text-[#555] flex items-center cursor-pointer hover:border-gray-400 transition-colors peer-checked:border-[#ca1016] peer-checked:text-[#ca1016] peer-checked:bg-[#fdf0f0]">Lyuk</label></div>
+                        <div><input type="checkbox" id="f4" class="feature-checkbox hidden peer"><label for="f4" class="border border-[#ccc] rounded-[5px] h-[32px] bg-white px-3 text-[14px] text-[#555] flex items-center cursor-pointer hover:border-gray-400 transition-colors peer-checked:border-[#ca1016] peer-checked:text-[#ca1016] peer-checked:bg-[#fdf0f0]">Yağış sensoru</label></div>
+                        <div><input type="checkbox" id="f5" class="feature-checkbox hidden peer"><label for="f5" class="border border-[#ccc] rounded-[5px] h-[32px] bg-white px-3 text-[14px] text-[#555] flex items-center cursor-pointer hover:border-gray-400 transition-colors peer-checked:border-[#ca1016] peer-checked:text-[#ca1016] peer-checked:bg-[#fdf0f0]">Mərkəzi qapanma</label></div>
+                        <div><input type="checkbox" id="f6" class="feature-checkbox hidden peer"><label for="f6" class="border border-[#ccc] rounded-[5px] h-[32px] bg-white px-3 text-[14px] text-[#555] flex items-center cursor-pointer hover:border-gray-400 transition-colors peer-checked:border-[#ca1016] peer-checked:text-[#ca1016] peer-checked:bg-[#fdf0f0]">Park radarı</label></div>
+                        <div><input type="checkbox" id="f7" class="feature-checkbox hidden peer"><label for="f7" class="border border-[#ccc] rounded-[5px] h-[32px] bg-white px-3 text-[14px] text-[#555] flex items-center cursor-pointer hover:border-gray-400 transition-colors peer-checked:border-[#ca1016] peer-checked:text-[#ca1016] peer-checked:bg-[#fdf0f0]">Kondisioner</label></div>
+                        <div><input type="checkbox" id="f8" class="feature-checkbox hidden peer"><label for="f8" class="border border-[#ccc] rounded-[5px] h-[32px] bg-white px-3 text-[14px] text-[#555] flex items-center cursor-pointer hover:border-gray-400 transition-colors peer-checked:border-[#ca1016] peer-checked:text-[#ca1016] peer-checked:bg-[#fdf0f0]">Oturacaqların isidilməsi</label></div>
+                        
+                        <div><input type="checkbox" id="f9" class="feature-checkbox hidden peer"><label for="f9" class="border border-[#ccc] rounded-[5px] h-[32px] bg-white px-3 text-[14px] text-[#555] flex items-center cursor-pointer hover:border-gray-400 transition-colors peer-checked:border-[#ca1016] peer-checked:text-[#ca1016] peer-checked:bg-[#fdf0f0]">Dəri salon</label></div>
+                        <div><input type="checkbox" id="f10" class="feature-checkbox hidden peer"><label for="f10" class="border border-[#ccc] rounded-[5px] h-[32px] bg-white px-3 text-[14px] text-[#555] flex items-center cursor-pointer hover:border-gray-400 transition-colors peer-checked:border-[#ca1016] peer-checked:text-[#ca1016] peer-checked:bg-[#fdf0f0]">Ksenon lampalar</label></div>
+                        <div><input type="checkbox" id="f11" class="feature-checkbox hidden peer"><label for="f11" class="border border-[#ccc] rounded-[5px] h-[32px] bg-white px-3 text-[14px] text-[#555] flex items-center cursor-pointer hover:border-gray-400 transition-colors peer-checked:border-[#ca1016] peer-checked:text-[#ca1016] peer-checked:bg-[#fdf0f0]">Arxa görüntü kamerası</label></div>
+                        <div><input type="checkbox" id="f12" class="feature-checkbox hidden peer"><label for="f12" class="border border-[#ccc] rounded-[5px] h-[32px] bg-white px-3 text-[14px] text-[#555] flex items-center cursor-pointer hover:border-gray-400 transition-colors peer-checked:border-[#ca1016] peer-checked:text-[#ca1016] peer-checked:bg-[#fdf0f0]">Yan pərdələr</label></div>
+                        <div><input type="checkbox" id="f13" class="feature-checkbox hidden peer"><label for="f13" class="border border-[#ccc] rounded-[5px] h-[32px] bg-white px-3 text-[14px] text-[#555] flex items-center cursor-pointer hover:border-gray-400 transition-colors peer-checked:border-[#ca1016] peer-checked:text-[#ca1016] peer-checked:bg-[#fdf0f0]">Oturacaqların ventilyasiyası</label></div>
+                        <div><input type="checkbox" id="f14" class="feature-checkbox hidden peer"><label for="f14" class="border border-[#ccc] rounded-[5px] h-[32px] bg-white px-3 text-[14px] text-[#555] flex items-center cursor-pointer hover:border-gray-400 transition-colors peer-checked:border-[#ca1016] peer-checked:text-[#ca1016] peer-checked:bg-[#fdf0f0]">360° kamera</label></div>
+
+                        <div><input type="checkbox" id="f15" class="feature-checkbox hidden peer"><label for="f15" class="border border-[#ccc] rounded-[5px] h-[32px] bg-white px-3 text-[14px] text-[#555] flex items-center cursor-pointer hover:border-gray-400 transition-colors peer-checked:border-[#ca1016] peer-checked:text-[#ca1016] peer-checked:bg-[#fdf0f0]">Head-up displey</label></div>
+                        <div><input type="checkbox" id="f16" class="feature-checkbox hidden peer"><label for="f16" class="border border-[#ccc] rounded-[5px] h-[32px] bg-white px-3 text-[14px] text-[#555] flex items-center cursor-pointer hover:border-gray-400 transition-colors peer-checked:border-[#ca1016] peer-checked:text-[#ca1016] peer-checked:bg-[#fdf0f0]">Ön görüntü kamerası</label></div>
+                        <div><input type="checkbox" id="f17" class="feature-checkbox hidden peer"><label for="f17" class="border border-[#ccc] rounded-[5px] h-[32px] bg-white px-3 text-[14px] text-[#555] flex items-center cursor-pointer hover:border-gray-400 transition-colors peer-checked:border-[#ca1016] peer-checked:text-[#ca1016] peer-checked:bg-[#fdf0f0]">İşıq sensoru</label></div>
+                        <div><input type="checkbox" id="f18" class="feature-checkbox hidden peer"><label for="f18" class="border border-[#ccc] rounded-[5px] h-[32px] bg-white px-3 text-[14px] text-[#555] flex items-center cursor-pointer hover:border-gray-400 transition-colors peer-checked:border-[#ca1016] peer-checked:text-[#ca1016] peer-checked:bg-[#fdf0f0]">Start-stop</label></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="flex justify-between items-center mt-3 border-t border-[#eaebf2] pt-4">
+                <div class="text-[13px] text-[#666] leading-tight">
+                    <span class="text-black font-bold">Bu gün:</span> <br>
+                    <a href="#" class="text-[#4c88f9] hover:underline">1384 yeni elan</a>
+                </div>
+
+                <div class="flex items-center gap-4">
+                    <div class="flex border border-[#ccc] rounded-[5px] h-[32px] bg-white items-center">
+                        <input type="radio" name="availability" id="avail_all" class="peer/avail_all hidden" checked>
+                        <label for="avail_all" class="px-4 text-center text-[14px] text-[#555] cursor-pointer h-full leading-[30px] hover:bg-gray-50 peer-checked/avail_all:bg-[#ca1016] peer-checked/avail_all:text-white transition-colors rounded-l-[4px]">Hamısı</label>
+                        
+                        <div class="w-[1px] h-full bg-[#ccc]"></div>
+                        
+                        <input type="radio" name="availability" id="avail_sale" class="peer/avail_sale hidden">
+                        <label for="avail_sale" class="px-4 text-center text-[14px] text-[#555] cursor-pointer h-full leading-[30px] hover:bg-gray-50 peer-checked/avail_sale:bg-[#ca1016] peer-checked/avail_sale:text-white transition-colors peer-checked:border-[#ca1016] peer-checked:text-[#ca1016] peer-checked:bg-[#fdf0f0]">Satışdadır</label>
+                        
+                        <div class="w-[1px] h-full bg-[#ccc]"></div>
+                        
+                        <input type="radio" name="availability" id="avail_order" class="peer/avail_order hidden">
+                        <label for="avail_order" class="px-4 text-center text-[14px] text-[#555] cursor-pointer h-full flex items-center justify-center hover:bg-gray-50 peer-checked/avail_order:bg-[#ca1016] peer-checked/avail_order:text-white transition-colors relative rounded-r-[4px]">
+                            Sifarişlə 
+                            <span class="bg-[#7ed321] text-white text-[10px] rounded-[5px] px-1.5 py-[1px] absolute -top-[10px] -right-[12px] leading-normal shadow-sm z-10 whitespace-nowrap">yeni</span>
+                        </label>
+                    </div>
+
+                    <button type="button" id="reset_filters_btn" class="text-[#999] text-[14px] hover:text-[#ca1016] transition-colors ml-2">Sıfırla</button>
+                    <button type="button" id="toggle_more_filters" class="text-[#ca1016] text-[14px] hover:underline flex items-center gap-1 ml-2 transition-all">
+                        <span id="more_filters_text">Daha çox filtr</span>
+                        <i class="fas fa-chevron-down text-[10px]" id="more_filters_icon"></i>
+                    </button>
+                </div>
+
+                <button type="submit" class="bg-[#ca1016] text-white text-[15px] font-bold px-8 h-[40px] rounded-[5px] cursor-pointer hover:bg-[#b00d12] transition-colors">Elanları göstər</button>
+            </div>
+        </div>
+    </form>
+
+    <div class="bg-[#f1f3f7] border-y border-[#eaebf2] py-[15px]">
+        <div class="max-w-[1000px] mx-auto px-2">
+            <h2 class="text-[16px] font-bold text-[#222] uppercase m-0">PREMİUM ELANLAR</h2>
+        </div>
+    </div>
+
+    <div class="bg-[#f6f7fa] py-6">
+        <div class="max-w-[1000px] mx-auto px-2">
+            <div id="cars-container" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-[#f1f3f7] pt-8 border-t border-[#eaebf2] font-sans">
+        <div class="max-w-[1000px] mx-auto px-2 flex flex-col md:flex-row items-center justify-between border-b border-[#eaebf2] pb-8 relative">
+            
+            <div class="flex flex-col items-center md:items-start mb-6 md:mb-0">
+                <h3 class="text-[18px] font-bold text-[#222] mb-4">Hər şey bir tətbiqdə!</h3>
+                <div class="flex gap-2">
+                    <a href="#" class="bg-black text-white rounded-[6px] flex items-center px-2 py-1.5 gap-2 hover:opacity-90 transition-opacity">
+                        <i class="fab fa-apple text-[22px]"></i>
+                        <div class="leading-none text-left">
+                            <span class="text-[8px] block font-light">Download on the</span>
+                            <span class="text-[13px] font-bold block mt-0.5">App Store</span>
+                        </div>
+                    </a>
+                    <a href="#" class="bg-black text-white rounded-[6px] flex items-center px-2 py-1.5 gap-2 hover:opacity-90 transition-opacity">
+                        <i class="fab fa-google-play text-[18px] text-white"></i>
+                        <div class="leading-none text-left">
+                            <span class="text-[8px] block font-light">GET IT ON</span>
+                            <span class="text-[13px] font-bold block mt-0.5">Google Play</span>
+                        </div>
+                    </a>
+                    <a href="#" class="bg-black text-white rounded-[6px] flex items-center px-2 py-1.5 gap-2 hover:opacity-90 transition-opacity">
+                        <i class="fas fa-shopping-bag text-[18px] text-red-500"></i>
+                        <div class="leading-none text-left">
+                            <span class="text-[8px] block font-light">EXPLORE IT ON</span>
+                            <span class="text-[13px] font-bold block mt-0.5">AppGallery</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="hidden md:flex items-end gap-6 md:pr-10">
+                <div class="w-[180px] -mt-20">
+                    <img src="https://turbo.azstatic.com/assets/application/footer/app-screen-az-ffed34fd4fb1843e1669213a5a2c1e483ec0b3de07f30c11974fd35ae91c2975.png" alt="App Screen" class="w-full object-contain">
+                </div>
+
+                <div class="flex flex-col items-start mb-10">
+                    <img src="https://turbo.azstatic.com/assets/application/footer/qr-code-4184765837b28cbd7a874abade29a2639d46eb1c575d59ca4c15077a8f315caa.png" alt="QR Code" class="w-[85px] h-[85px] mb-2">
+                    <p class="text-[12px] text-[#555] leading-[1.3] text-left max-w-[120px]">
+                        Yükləmək üçün kameranı QR-koda yönəldin
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="max-w-[1000px] mx-auto px-2 py-6 flex flex-col md:flex-row justify-between items-center border-b border-[#eaebf2]">
+            <a href="#" class="text-[#ca1016] text-[13px] hover:underline mb-4 md:mb-0">Reklam yerləşdirin</a>
+            <div class="flex items-center gap-6 text-[13px] text-[#555]">
+                <div class="flex gap-4">
+                    <a href="#" class="hover:text-[#ca1016] transition-colors"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="hover:text-[#ca1016] transition-colors"><i class="fab fa-instagram"></i></a>
+                </div>
+                <a href="mailto:turbo@turbo.az" class="hover:text-[#ca1016] transition-colors flex items-center gap-2">
+                    <i class="far fa-envelope"></i> turbo@turbo.az
+                </a>
+                <a href="tel:0125984747" class="hover:text-[#ca1016] transition-colors flex items-center gap-2">
+                    <i class="fas fa-phone-alt"></i> (012) 598-47-47
+                </a>
+            </div>
+        </div>
+
+        <div class="max-w-[1000px] mx-auto px-2 py-6">
+            <div class="columns-2 sm:columns-3 md:columns-5 lg:columns-8 gap-4 text-[11px] text-[#888]">
+                <div class="mb-1"><a href="#" class="hover:underline">Abarth (3)</a></div>
+                <div class="mb-1"><a href="#" class="hover:underline">Acura (2)</a></div>
+                <div class="mb-1"><a href="#" class="hover:underline">Alfa Romeo (4)</a></div>
+                <div class="mb-1"><a href="#" class="hover:underline">Aston Martin (3)</a></div>
+                <div class="mb-1"><a href="#" class="hover:underline">Audi (137)</a></div>
+                <div class="mb-1"><a href="#" class="hover:underline">Bajaj (10)</a></div>
+                <div class="mb-1"><a href="#" class="hover:underline">Bentley (50)</a></div>
+                <div class="mb-1"><a href="#" class="hover:underline">BMW (2213)</a></div>
+                <div class="mb-1"><a href="#" class="hover:underline">BYD (300)</a></div>
+                <div class="mb-1"><a href="#" class="hover:underline">Cadillac (20)</a></div>
+                <div class="mb-1"><a href="#" class="hover:underline">Changan (460)</a></div>
+                <div class="mb-1"><a href="#" class="hover:underline">Chery (70)</a></div>
+                <div class="mb-1"><a href="#" class="hover:underline">Chevrolet (2033)</a></div>
+                <div class="mb-1"><a href="#" class="hover:underline">Chrysler (18)</a></div>
+                <div class="mb-1"><a href="#" class="hover:underline">Citroen (13)</a></div>
+                <div class="mb-1"><a href="#" class="hover:underline">Dacia (67)</a></div>
+                <div class="mb-1"><a href="#" class="hover:underline">Daewoo (213)</a></div>
+                <div class="mb-1"><a href="#" class="hover:underline">Dodge (47)</a></div>
+                <div class="mb-1"><a href="#" class="hover:underline">Ferrari (1)</a></div>
+                <div class="mb-1"><a href="#" class="hover:underline">Fiat (133)</a></div>
+                <div class="mb-1"><a href="#" class="hover:underline">Ford (1779)</a></div>
+                <div class="mb-1"><a href="#" class="hover:underline">GAC (9)</a></div>
+                <div class="mb-1"><a href="#" class="hover:underline">GAZ (632)</a></div>
+                <div class="mb-1"><a href="#" class="hover:underline">Geely (120)</a></div>
+                <div class="mb-1"><a href="#" class="hover:underline">GMC (25)</a></div>
+                <div class="mb-1"><a href="#" class="hover:underline">Haval (71)</a></div>
+                <div class="mb-1"><a href="#" class="hover:underline">Honda (525)</a></div>
+                <div class="mb-1"><a href="#" class="hover:underline">Hyundai (3950)</a></div>
+                <div class="mb-1"><a href="#" class="hover:underline">Infiniti (121)</a></div>
+                <div class="mb-1"><a href="#" class="hover:underline">Isuzu (10)</a></div>
+                <div class="mb-1"><a href="#" class="hover:underline">JAC (40)</a></div>
+                <div class="mb-1"><a href="#" class="hover:underline">Jaguar (23)</a></div>
+                <div class="mb-1"><a href="#" class="hover:underline">Jeep (285)</a></div>
+                <div class="mb-1"><a href="#" class="hover:underline">JETOUR (53)</a></div>
+                <div class="mb-1"><a href="#" class="hover:underline">Kawasaki (20)</a></div>
+                <div class="mb-1"><a href="#" class="hover:underline">Kia (3978)</a></div>
+                <div class="mb-1"><a href="#" class="hover:underline">LADA (VAZ) (3769)</a></div>
+                <div class="mb-1"><a href="#" class="hover:underline">Lamborghini (5)</a></div>
+                <div class="mb-1"><a href="#" class="hover:underline">Land Rover (621)</a></div>
+                <div class="mb-1"><a href="#" class="hover:underline">Lexus (1002)</a></div>
+                <div class="mb-1"><a href="#" class="hover:underline">Li (55)</a></div>
+                <div class="mb-1"><a href="#" class="hover:underline">Lincoln (17)</a></div>
+                <div class="mb-1"><a href="#" class="hover:underline">Lotus (1)</a></div>
+                <div class="mb-1"><a href="#" class="hover:underline">Maserati (21)</a></div>
+                <div class="mb-1"><a href="#" class="hover:underline">Mazda (159)</a></div>
+                <div class="mb-1"><a href="#" class="hover:underline">Mercedes (6514)</a></div>
+                <div class="mb-1"><a href="#" class="hover:underline">MG (31)</a></div>
+                <div class="mb-1"><a href="#" class="hover:underline">MINI (27)</a></div>
+                <div class="mb-1"><a href="#" class="hover:underline">Mitsubishi (310)</a></div>
+                <div class="mb-1"><a href="#" class="hover:underline">Nissan (1237)</a></div>
+                <div class="mb-1"><a href="#" class="hover:underline">Opel (1009)</a></div>
+                <div class="mb-1"><a href="#" class="hover:underline">Peugeot (58)</a></div>
+                <div class="mb-1"><a href="#" class="hover:underline">Porsche (232)</a></div>
+                <div class="mb-1"><a href="#" class="hover:underline">Renault (264)</a></div>
+                <div class="mb-1"><a href="#" class="hover:underline">Rolls-Royce (5)</a></div>
+                <div class="mb-1"><a href="#" class="hover:underline">Skoda (78)</a></div>
+                <div class="mb-1"><a href="#" class="hover:underline">Smart (2)</a></div>
+                <div class="mb-1"><a href="#" class="hover:underline">Subaru (69)</a></div>
+                <div class="mb-1"><a href="#" class="hover:underline">Suzuki (63)</a></div>
+                <div class="mb-1"><a href="#" class="hover:underline">Tesla (126)</a></div>
+                <div class="mb-1"><a href="#" class="hover:underline">Toyota (2593)</a></div>
+                <div class="mb-1"><a href="#" class="hover:underline">Togg (2)</a></div>
+                <div class="mb-1"><a href="#" class="hover:underline">UAZ (50)</a></div>
+                <div class="mb-1"><a href="#" class="hover:underline">Ural (6)</a></div>
+                <div class="mb-1"><a href="#" class="hover:underline">Volkswagen (973)</a></div>
+                <div class="mb-1"><a href="#" class="hover:underline">Volvo (85)</a></div>
+                <div class="mb-1"><a href="#" class="hover:underline">VGV (20)</a></div>
+                <div class="mb-1"><a href="#" class="hover:underline">Zotye (9)</a></div>
+                <div class="mb-1"><a href="#" class="hover:underline">Zeekr (100)</a></div>
+                <div class="mb-1"><a href="#" class="hover:underline">ZX Auto (1)</a></div>
+            </div>
+        </div>
+
+        <div class="max-w-[1000px] mx-auto px-2 py-4 flex flex-wrap gap-4 text-[12px] text-[#555] border-t border-[#eaebf2]">
+            <a href="#" class="hover:text-[#ca1016]">Qaydalar</a>
+            <a href="#" class="hover:text-[#ca1016]">Qanun</a>
+            <a href="#" class="hover:text-[#ca1016]">İstifadəçi razılaşması</a>
+            <a href="#" class="hover:text-[#ca1016]">Məxfilik siyasəti</a>
+            <a href="#" class="hover:text-[#ca1016]">Ehtiyat hissələri satışı üçün Qaydalar</a>
+            <a href="#" class="hover:text-[#ca1016]">Reklam yerləşdirin</a>
+        </div>
+
+        <div class="bg-[#ca1016] py-3 text-[#f2f2f2] text-[11px] font-sans">
+            <div class="max-w-[1000px] mx-auto px-2 flex flex-col md:flex-row justify-between items-center gap-2">
+                <div class="text-center md:text-left max-w-[300px]">
+                    Saytın rəhbərliyi reklam bannerlərinin və yerləşdirilmiş elanların məzmununa görə məsuliyyət daşımır
+                </div>
+                <div class="text-center font-bold">
+                    2006-2026 Digital Classifieds MMC. VÖEN: 1405631661
+                </div>
+                <div class="text-center md:text-right">
+                    <a href="#" class="hover:underline font-bold">Mobil versiyası</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
